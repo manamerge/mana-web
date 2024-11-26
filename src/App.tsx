@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import { Button } from "@manamerge/mana-atomic-ui";
 import { Text } from "@manamerge/mana-atomic-ui";
