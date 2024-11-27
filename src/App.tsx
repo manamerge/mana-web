@@ -2,6 +2,8 @@ import "./App.css";
 import { Button } from "@manamerge/mana-atomic-ui";
 import { Text } from "@manamerge/mana-atomic-ui";
 import { Link } from "@manamerge/mana-atomic-ui";
+import { Heading } from "@manamerge/mana-atomic-ui";
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,13 @@ function App() {
           width: "full",
         }}
       >
+        <Heading className="h1">H1 in the ZONE!</Heading>
+        <Heading className="h2">H2 in the ZONE!</Heading>
+        <Heading className="h3">H3 in the ZONE!</Heading>
+        <Heading className="h4">H4 in the ZONE!</Heading>
+        <Heading className="h5">H5 in the ZONE!</Heading>
+        <Heading className="h6">H6 in the ZONE!</Heading>
+
         <Link className="light">Link here!</Link>
         <Link className="regular">Link here!</Link>
         <Link className="medium">Link here!</Link>
