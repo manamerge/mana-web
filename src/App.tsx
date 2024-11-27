@@ -5,41 +5,41 @@ import { Link } from "@manamerge/mana-atomic-ui";
 import { Heading } from "@manamerge/mana-atomic-ui";
 
 function App() {
-  return (
-    <div className="App">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignContent: "center",
-          flexDirection: "column",
-          width: "full",
-        }}
-      >
-        <Heading className="h1">H1 in the ZONE!</Heading>
-        <Heading className="h2">H2 in the ZONE!</Heading>
-        <Heading className="h3">H3 in the ZONE!</Heading>
-        <Heading className="h4">H4 in the ZONE!</Heading>
-        <Heading className="h5">H5 in the ZONE!</Heading>
-        <Heading className="h6">H6 in the ZONE!</Heading>
+    return (
+        <div className="App">
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignContent: "center",
+                    flexDirection: "column",
+                    width: "full"
+                }}
+            >
+                <Heading className="h1">H1 in the ZONE!</Heading>
+                <Heading className="h2">H2 in the ZONE!</Heading>
+                <Heading className="h3">H3 in the ZONE!</Heading>
+                <Heading className="h4">H4 in the ZONE!</Heading>
+                <Heading className="h5">H5 in the ZONE!</Heading>
+                <Heading className="h6">H6 in the ZONE!</Heading>
 
-        <Link className="light">Link here!</Link>
-        <Link className="regular">Link here!</Link>
-        <Link className="medium">Link here!</Link>
-        <Link className="bold">Link here!</Link>
-        <Link className="heavy">Link here!</Link>
-      </div>
+                <Link className="light">Link here!</Link>
+                <Link className="regular">Link here!</Link>
+                <Link className="medium">Link here!</Link>
+                <Link className="bold">Link here!</Link>
+                <Link className="heavy">Link here!</Link>
+            </div>
 
-      <Button className="primary">Button secondary primary</Button>
-      <Button className="secondary">Button secondary</Button>
+            <Button className="primary">Button secondary primary</Button>
+            <Button className="secondary">Button secondary</Button>
 
-      <Text className="light">Gilmer font here!</Text>
-      <Text className="regular">Gilmer font here!</Text>
-      <Text className="medium">Gilmer font here!</Text>
-      <Text className="bold">Gilmer font here!</Text>
-      <Text className="heavy">Gilmer font here!</Text>
-    </div>
-  );
+            <Text className="light">Gilmer font here!</Text>
+            <Text className="regular">Gilmer font here!</Text>
+            <Text className="medium">Gilmer font here!</Text>
+            <Text className="bold">Gilmer font here!</Text>
+            <Text className="heavy">Gilmer font here!</Text>
+        </div>
+    );
 }
 
 export default App;
