@@ -1,9 +1,11 @@
 import "./App.css";
+import React from "react";
 import { Button } from "@manamerge/mana-atomic-ui";
 import { Text } from "@manamerge/mana-atomic-ui";
 import { Link } from "@manamerge/mana-atomic-ui";
 import { Heading } from "@manamerge/mana-atomic-ui";
-
+import { Icon } from "@manamerge/mana-atomic-ui";
+import { ReactComponent as logo } from "./logo.svg";
 function App() {
     return (
         <div className="App">
@@ -11,11 +13,15 @@ function App() {
                 style={{
                     display: "flex",
                     justifyContent: "center",
+                    alignItems: "center",
                     alignContent: "center",
                     flexDirection: "column",
                     width: "full"
                 }}
             >
+                <Icon className="small" svg={logo} />
+                <Icon className="medium" svg={logo} />
+                <Icon className="large" svg={logo} />
                 <Heading className="h1">H1 in the ZONE!</Heading>
                 <Heading className="h2">H2 in the ZONE!</Heading>
                 <Heading className="h3">H3 in the ZONE!</Heading>
