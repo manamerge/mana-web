@@ -23,11 +23,21 @@ function App() {
                 <Heading className="h5">H5 in the ZONE!</Heading>
                 <Heading className="h6">H6 in the ZONE!</Heading>
 
-                <Link className="light">Link here!</Link>
-                <Link className="regular">Link here!</Link>
-                <Link className="medium">Link here!</Link>
-                <Link className="bold">Link here!</Link>
-                <Link className="heavy">Link here!</Link>
+                <Link href="https://www.google.com" className="light">
+                    Link here!
+                </Link>
+                <Link href={"https://www.google.com"} className="regular">
+                    Link here!
+                </Link>
+                <Link href={"https://www.google.com"} className="medium">
+                    Link here!
+                </Link>
+                <Link href={"https://www.google.com"} className="bold">
+                    Link here!
+                </Link>
+                <Link href={"https://www.google.com"} className="heavy">
+                    Link here!
+                </Link>
             </div>
 
             <Button className="primary">Button secondary primary</Button>
