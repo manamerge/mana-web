@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import SolutionsPage from "./pages/SolutionsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import TestPage from "./App";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
         path: "/solutions",
         element: <SolutionsPage />,
         errorElement: <NotFoundPage />
+    },
+    {
+        path: "/test",
+        element: <TestPage />,
+        errorElement: <NotFoundPage />
     }
 ]);
 
@@ -36,8 +42,10 @@ root.render(
     <React.StrictMode>
         <ThemeProvider theme={Theme}>
             <GlobalStyles />
-            <App />
-            <RouterProvider router={router} />
+
+            <RouterProvider router={router}>
+                <App />
+            </RouterProvider>
         </ThemeProvider>
     </React.StrictMode>
 );
