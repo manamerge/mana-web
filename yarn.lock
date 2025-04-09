@@ -1661,10 +1661,10 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.5.tgz#4fc56c15c580b9adb7dc3c333a134e540b44bfb1"
   integrity sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==
 
-"@manamerge/mana-atomic-ui@^0.0.55":
-  version "0.0.55"
-  resolved "https://registry.yarnpkg.com/@manamerge/mana-atomic-ui/-/mana-atomic-ui-0.0.55.tgz#1c9bf36f8c60febefcdb90c1fa106543e8761dfc"
-  integrity sha512-FnljejaoxxzLKJ5HIBk0Dm4OLvYQSa1kb9qcSEhGIF5m2vn+ace+HLmV3ZEx8ZeLrTgVnXpYuVziQJnRTB7JEw==
+"@manamerge/mana-atomic-ui@^0.0.86":
+  version "0.0.86"
+  resolved "https://registry.npmjs.org/@manamerge/mana-atomic-ui/-/mana-atomic-ui-0.0.86.tgz#84a930ba06ed1768d6f778c5300c98e87fca0ac2"
+  integrity sha512-astA4QiqWkG6zKSj1jlVEttSly/t4LbiYvl8CeCHDlg7AaPe8qXbDeA8sQRtaHwCExh1rAZFUZK5GzESln/2xA==
   dependencies:
     "@storybook/addon-themes" "^8.4.5"
     classnames "^2.5.1"
