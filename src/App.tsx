@@ -7,7 +7,8 @@ import {
     Heading,
     Icon,
     Navigation,
-    Header
+    Header,
+    Gradient
 } from "@manamerge/mana-atomic-ui";
 
 import { ReactComponent as iconBurger } from "./icons/burger.svg";
@@ -17,6 +18,7 @@ import { ReactComponent as iconLeft } from "./icons/iconLeft.svg";
 import { ReactComponent as iconRight } from "./icons/iconRight.svg";
 
 import { ReactComponent as logo } from "./logo.svg";
+
 function App() {
     return (
         <div className="App">
@@ -48,23 +50,41 @@ function App() {
                     width: "full"
                 }}
             >
-                <Header
-                    buttonLeftClick={() => {}}
-                    buttonLeftText="Let's talk"
-                    buttonRightClick={() => {}}
-                    buttonRightText="Contact us"
-                    headingTitle="Welcome to ManaMerge"
-                    iconDot={iconDot}
-                    iconLeft={iconLeft}
-                    iconRight={iconRight}
-                    iconTop={iconTop}
-                    textBanner="available to offer services"
-                    textTitle={[
-                        "We are a team of Software Engineers",
-                        "Our interest goes to all developing environments"
-                    ]}
-                />
-
+                <Gradient variant="primary">
+                    <Text variant="light">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Culpa minima aspernatur officiis, saepe aliquid
+                        possimus expedita ad ut sint fugiat?
+                    </Text>
+                </Gradient>
+                <Gradient variant="secondary">
+                    <Text variant="regular">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Culpa minima aspernatur officiis, saepe aliquid
+                        possimus expedita ad ut sint fugiat?
+                    </Text>
+                </Gradient>
+                <Gradient variant="tertiary">
+                    <Text variant="medium">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Culpa minima aspernatur officiis, saepe aliquid
+                        possimus expedita ad ut sint fugiat?
+                    </Text>
+                </Gradient>
+                <Gradient variant="primary">
+                    <Text variant="bold">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Culpa minima aspernatur officiis, saepe aliquid
+                        possimus expedita ad ut sint fugiat?
+                    </Text>
+                </Gradient>
+                <Gradient variant="secondary">
+                    <Text variant="heavy">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Culpa minima aspernatur officiis, saepe aliquid
+                        possimus expedita ad ut sint fugiat?
+                    </Text>
+                </Gradient>
                 <Icon variant="small" svg={logo} />
                 <Icon variant="medium" svg={logo} />
                 <Icon variant="large" svg={logo} />
@@ -100,6 +120,22 @@ function App() {
             <Text variant="medium">Gilmer font here!</Text>
             <Text variant="bold">Gilmer font here!</Text>
             <Text variant="heavy">Gilmer font here!</Text>
+            <Header
+                buttonLeftClick={() => {}}
+                buttonLeftText="Let's talk"
+                buttonRightClick={() => {}}
+                buttonRightText="Contact us"
+                headingTitle="Welcome to ManaMerge"
+                iconDot={iconDot}
+                iconLeft={iconLeft}
+                iconRight={iconRight}
+                iconTop={iconTop}
+                textBanner="available to offer services"
+                textTitle={[
+                    "We are a team of Software Engineers",
+                    "Our interest goes to all developing environments"
+                ]}
+            />
         </div>
     );
 }
