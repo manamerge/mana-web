@@ -8,7 +8,8 @@ import {
     Icon,
     Navigation,
     Header,
-    Gradient
+    Gradient,
+    Divider
 } from "@manamerge/mana-atomic-ui";
 
 import { ReactComponent as iconBurger } from "./icons/burger.svg";
@@ -85,6 +86,9 @@ function App() {
                         possimus expedita ad ut sint fugiat?
                     </Text>
                 </Gradient>
+                <Divider variant="primary" margin="10px auto" />
+                <Divider variant="secondary" margin="10px auto" />
+                <Divider variant="tertiary" margin="10px auto" />
                 <Icon variant="small" svg={logo} />
                 <Icon variant="medium" svg={logo} />
                 <Icon variant="large" svg={logo} />
