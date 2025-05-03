@@ -8,7 +8,8 @@ import {
     Icon,
     Navigation,
     Header,
-    Gradient
+    Gradient,
+    Accordion
 } from "@manamerge/mana-atomic-ui";
 
 import { ReactComponent as iconBurger } from "./icons/burger.svg";
@@ -85,6 +86,25 @@ function App() {
                         possimus expedita ad ut sint fugiat?
                     </Text>
                 </Gradient>
+                <Accordion
+                    content={[
+                        {
+                            description:
+                                "At the moment, I'm pretty happy where I am. Currently I am not looking for any full-time opportunities. But that being said, I am always open to discuss interesting opportunities, collaborations and other fun stuff. If you’re interested in discussing a project, making something great together, please fill the form above. Simply want to get in touch? Happy to connect on socials.",
+                            title: "Are you available to hire full time?"
+                        },
+                        {
+                            description: "something on the second",
+                            title: "How do your quote pricing works and when can we get on call?"
+                        },
+                        {
+                            description: "This is the description of number 3",
+                            title: "Can you facelift my design?"
+                        }
+                    ]}
+                    iconMinus={logo}
+                    iconPlus={logo}
+                />
                 <Icon variant="small" svg={logo} />
                 <Icon variant="medium" svg={logo} />
                 <Icon variant="large" svg={logo} />
