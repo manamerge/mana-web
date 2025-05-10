@@ -6,32 +6,24 @@ import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "styled-components";
 import Theme, { GlobalStyles } from "./utils/Theme";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/Home/HomePage";
+import AboutPage from "./pages/About/AboutPage";
 import SolutionsPage from "./pages/SolutionsPage";
-import NotFoundPage from "./pages/NotFoundPage";
-import TestPage from "./App";
+import NotFoundPage from "./pages/NotFound/NotFoundPage";
+import TestPage from "./pages/HiddenTestPage";
+import MainLayout from "./layouts/Layout";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <HomePage />,
-        errorElement: <NotFoundPage />
-    },
-    {
-        path: "/about",
-        element: <AboutPage />,
-        errorElement: <NotFoundPage />
-    },
-    {
-        path: "/solutions",
-        element: <SolutionsPage />,
-        errorElement: <NotFoundPage />
-    },
-    {
-        path: "/test",
-        element: <TestPage />,
-        errorElement: <NotFoundPage />
+        element: <MainLayout />,
+        children: [
+            { index: true, element: <HomePage /> },
+            { path: "about", element: <AboutPage /> },
+            { path: "solutions", element: <SolutionsPage /> },
+            { path: "test", element: <TestPage /> },
+            { path: "*", element: <NotFoundPage /> }
+        ]
     }
 ]);
 
