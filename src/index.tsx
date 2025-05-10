@@ -8,7 +8,7 @@ import Theme, { GlobalStyles } from "./utils/Theme";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/Home/HomePage";
 import AboutPage from "./pages/About/AboutPage";
-import SolutionsPage from "./pages/SolutionsPage";
+import SolutionsPage from "./pages/Solutions/SolutionsPage";
 import NotFoundPage from "./pages/NotFound/NotFoundPage";
 import TestPage from "./pages/HiddenTestPage";
 import MainLayout from "./layouts/Layout";
