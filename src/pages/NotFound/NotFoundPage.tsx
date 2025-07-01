@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@manamerge/mana-atomic-ui";
 
 export default function NotFoundPage() {
     return (
