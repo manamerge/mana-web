@@ -6,6 +6,11 @@ import pluginReact from "eslint-plugin-react";
 
 export default [
     {
+        rules: {
+            "@typescript-eslint/ban-ts-comment": "error"
+        }
+    },
+    {
         ignores: ["build", "dist"]
     },
     {
