@@ -5,7 +5,8 @@ import {
     CardBanner,
     CardSimpleRender,
     CardTeaser,
-    Header
+    Header,
+    Accordion
 } from "@manamerge/mana-atomic-ui";
 
 // Assets
@@ -27,32 +28,41 @@ export default function HomePage() {
                     gap: "20px"
                 }}
             >
-                <div
-                    style={{
-                        height: "30px",
-                        background: "gold",
-                        margin: "120px"
-                    }}
-                >
-                    WIP ***Header*** WIP
-                </div>
-
-                {/* <Header
-                buttonLeftClick={() => {}}
-                buttonLeftText="Let's talk"
-                buttonRightClick={() => {}}
-                buttonRightText="Contact us"
-                headingTitle="Welcome to ManaMerge"
-                iconDot={iconDot}
-                iconLeft={iconLeft}
-                iconRight={iconRight}
-                iconTop={iconTop}
-                textBanner="available to offer services"
-                textTitle={[
-                    "We are a team of Software Engineers",
-                    "Our interest goes to all developing environments"
-                ]}
-            /> */}
+                <Header
+                    buttonLeftClick={() => {}}
+                    buttonLeftText="Let's talk"
+                    buttonRightClick={() => {}}
+                    buttonRightText="Contact us"
+                    headingTitle="Welcome to ManaMerge"
+                    iconDot={iconDot}
+                    iconLeft={iconLeft}
+                    iconRight={iconRight}
+                    iconTop={iconTop}
+                    textBanner="available to offer services"
+                    textTitle={[
+                        "We are a team of Software Engineers",
+                        "Our interest goes to all developing environments"
+                    ]}
+                />
+                <Accordion
+                    content={[
+                        {
+                            description:
+                                "At the moment, I'm pretty happy where I am. Currently I am not looking for any full-time opportunities. But that being said, I am always open to discuss interesting opportunities, collaborations and other fun stuff. If you’re interested in discussing a project, making something great together, please fill the form above. Simply want to get in touch? Happy to connect on socials.",
+                            title: "Are you available to hire full time?"
+                        },
+                        {
+                            description: "something on the second",
+                            title: "How do your quote pricing works and when can we get on call?"
+                        },
+                        {
+                            description: "This is the description of number 3",
+                            title: "Can you facelift my design?"
+                        }
+                    ]}
+                    iconMinus={iconLeft}
+                    iconPlus={iconRight}
+                />
                 <CardTeaser
                     company="ManaMerge"
                     year="2025"
