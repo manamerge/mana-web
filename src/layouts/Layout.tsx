@@ -13,16 +13,20 @@ const MainLayout = () => {
                 onTabClick={() => {}}
                 tabs={[
                     {
-                        label: "Home",
+                        label: "MM",
                         to: "/"
                     },
                     {
-                        label: "About",
-                        to: "/About"
+                        label: "The Team",
+                        to: "/TheTeam"
                     },
                     {
-                        label: "solutions",
-                        to: "/Solutions"
+                        label: "Why Us",
+                        to: "/WhyUs"
+                    },
+                    {
+                        label: "Lets Talk",
+                        to: "/LetsTalk"
                     }
                 ]}
             />

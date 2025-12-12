@@ -6,11 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "styled-components";
 import Theme, { GlobalStyles } from "./utils/Theme";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/Home/HomePage";
-import AboutPage from "./pages/About/AboutPage";
-import SolutionsPage from "./pages/Solutions/SolutionsPage";
+import HomePage from "./pages/Home/MMPage/MMPage";
+import AboutPage from "./pages/TheTeamPage/TheTeamPage";
+import SolutionsPage from "./pages/WhyUsPage/WhyUsPage";
 import NotFoundPage from "./pages/NotFound/NotFoundPage";
-import TestPage from "./pages/HiddenTestPage";
+import TestPage from "./pages/LetsTalkPage/LetsTalkPage";
 import MainLayout from "./layouts/Layout";
 
 const router = createBrowserRouter([
@@ -19,9 +19,9 @@ const router = createBrowserRouter([
         element: <MainLayout />,
         children: [
             { index: true, element: <HomePage /> },
-            { path: "about", element: <AboutPage /> },
-            { path: "solutions", element: <SolutionsPage /> },
-            { path: "test", element: <TestPage /> },
+            { path: "theteam", element: <AboutPage /> },
+            { path: "whyus", element: <SolutionsPage /> },
+            { path: "letstalk", element: <TestPage /> },
             { path: "*", element: <NotFoundPage /> }
         ]
     }
