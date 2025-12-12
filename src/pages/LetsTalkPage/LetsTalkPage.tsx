@@ -1,4 +1,3 @@
-// import "./HiddenTestPage.css";
 import React from "react";
 import {
     Button,
@@ -12,17 +11,19 @@ import {
     Divider
 } from "@manamerge/mana-atomic-ui";
 
-import { ReactComponent as iconBurger } from "../icons/burger.svg";
-import { ReactComponent as iconTop } from "../icons/iconTop.svg";
-import { ReactComponent as iconDot } from "../icons/iconDot.svg";
-import { ReactComponent as iconLeft } from "../icons/iconLeft.svg";
-import { ReactComponent as iconRight } from "../icons/iconRight.svg";
+import { ReactComponent as iconBurger } from "../../icons/burger.svg";
+import { ReactComponent as iconTop } from "../../icons/iconTop.svg";
+import { ReactComponent as iconDot } from "../../icons/iconDot.svg";
+import { ReactComponent as iconLeft } from "../../icons/iconLeft.svg";
+import { ReactComponent as iconRight } from "../../icons/iconRight.svg";
 
-import { ReactComponent as logo } from "../logo.svg";
+import { ReactComponent as logo } from "../../logo.svg";
 
-function HiddenTestPage() {
+function LetsTalkPage() {
     return (
-        <div className="HiddenTestPage">
+        <div>
+            <div>DAVID CHUNK</div>
+
             <Navigation
                 iconBurger={iconBurger}
                 onTabClick={() => {}}
@@ -144,4 +145,4 @@ function HiddenTestPage() {
     );
 }
 
-export default HiddenTestPage;
+export default LetsTalkPage;

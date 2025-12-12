@@ -18,11 +18,11 @@ const MainLayout = () => {
                     },
                     {
                         label: "The Team",
-                        to: "/About"
+                        to: "/TheTeam"
                     },
                     {
                         label: "Why Us",
-                        to: "/Us"
+                        to: "/WhyUs"
                     },
                     {
                         label: "Lets Talk",
