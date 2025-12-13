@@ -10,19 +10,19 @@ import {
 } from "@manamerge/mana-atomic-ui";
 
 // Assets
-import { ReactComponent as iconTop } from "../../../icons/iconTop.svg";
-import { ReactComponent as iconDot } from "../../../icons/iconDot.svg";
-import { ReactComponent as iconLeft } from "../../../icons/iconLeft.svg";
-import { ReactComponent as iconRight } from "../../../icons/iconRight.svg";
-import { ReactComponent as Sample } from "./../assets/sample.svg";
-import sampleImage from "./../assets/sampleImg.png";
+import { ReactComponent as iconTop } from "../../icons/iconTop.svg";
+import { ReactComponent as iconDot } from "../../icons/iconDot.svg";
+import { ReactComponent as iconLeft } from "../../icons/iconLeft.svg";
+import { ReactComponent as iconRight } from "../../icons/iconRight.svg";
+import { ReactComponent as Sample } from "./assets/sample.svg";
+import sampleImage from "./assets/sampleImg.png";
 
 export default function MMPage() {
     return (
         <>
-            <div>ALEXIS CHUNK</div>
             <div
                 style={{
+                    marginTop: "50px",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -45,25 +45,7 @@ export default function MMPage() {
                         "Our interest goes to all developing environments"
                     ]}
                 />
-                <Accordion
-                    content={[
-                        {
-                            description:
-                                "At the moment, I'm pretty happy where I am. Currently I am not looking for any full-time opportunities. But that being said, I am always open to discuss interesting opportunities, collaborations and other fun stuff. If you’re interested in discussing a project, making something great together, please fill the form above. Simply want to get in touch? Happy to connect on socials.",
-                            title: "Are you available to hire full time?"
-                        },
-                        {
-                            description: "something on the second",
-                            title: "How do your quote pricing works and when can we get on call?"
-                        },
-                        {
-                            description: "This is the description of number 3",
-                            title: "Can you facelift my design?"
-                        }
-                    ]}
-                    iconMinus={iconLeft}
-                    iconPlus={iconRight}
-                />
+
                 <CardTeaser
                     company="ManaMerge"
                     year="2025"
@@ -169,14 +151,37 @@ export default function MMPage() {
                 />
                 <div
                     style={{
-                        height: "30px",
-                        background: "gold",
-                        margin: "120px"
+                        width: "60%",
+                        marginTop: "50px",
+                        marginBottom: "30px"
                     }}
                 >
-                    WIP ***DROPDOWN_FAQ*** WIP
+                    <Accordion
+                        content={[
+                            {
+                                description:
+                                    "At the moment, I'm pretty happy where I am. Currently I am not looking for any full-time opportunities. But that being said, I am always open to discuss interesting opportunities, collaborations and other fun stuff. If you’re interested in discussing a project, making something great together, please fill the form above. Simply want to get in touch? Happy to connect on socials.",
+                                title: "Are you available to hire full time?"
+                            },
+                            {
+                                description: "something on the second",
+                                title: "How do your quote pricing works and when can we get on call?"
+                            },
+                            {
+                                description:
+                                    "This is the description of number 3",
+                                title: "Can you facelift my design?"
+                            }
+                        ]}
+                        iconMinus={iconLeft}
+                        iconPlus={iconRight}
+                    />
                 </div>
-                <div>
+                <div
+                    style={{
+                        marginBottom: "50px"
+                    }}
+                >
                     <CardBanner
                         title="Let's connect and create something amazing!"
                         description="Reach out to us for collaborations, inquiries, and more."
