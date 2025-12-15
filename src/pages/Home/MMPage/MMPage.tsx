@@ -10,10 +10,10 @@ import {
 } from "@manamerge/mana-atomic-ui";
 
 // Assets
-import { ReactComponent as iconTop } from "../../../icons/iconTop.svg";
 import { ReactComponent as iconDot } from "../../../icons/iconDot.svg";
 import { ReactComponent as iconLeft } from "../../../icons/iconLeft.svg";
 import { ReactComponent as iconRight } from "../../../icons/iconRight.svg";
+import { ReactComponent as iconTop } from "../../../icons/iconTop.svg";
 import { ReactComponent as Sample } from "./../assets/sample.svg";
 import sampleImage from "./../assets/sampleImg.png";
 
