@@ -5,48 +5,52 @@ import {
     CardBanner,
     Header
 } from "@manamerge/mana-atomic-ui";
-
-//! WIP Assets Header for now, this ones.
-//!In the future we will have specific ones for this page and will belong to theTeamPage assets folder
-import { ReactComponent as iconDot } from "./../../icons/iconDot.svg";
-import { ReactComponent as iconLeft } from "./../../icons/iconLeft.svg";
-import { ReactComponent as iconRight } from "./../../icons/iconRight.svg";
-import { ReactComponent as iconTop } from "./../../icons/iconTop.svg";
+import "./TheTeamPage.css";
 // Assets breaker tape and cards
 import { ReactComponent as Sample } from "./assets/sample.svg";
+import ProfessionalExperiences from "./components/ProfessionalExperiences";
 
 export default function TheTeamPage() {
     return (
-        <div>
+        <div style={{ background: "#121212" }}>
             <Header
-                buttonLeftClick={() => {}}
-                buttonLeftText="Let's talk"
-                buttonRightClick={() => {}}
-                buttonRightText="Contact us"
-                headingTitle="Meet The Team"
-                iconDot={iconDot}
-                iconLeft={iconLeft}
-                iconRight={iconRight}
-                iconTop={iconTop}
-                textBanner="available to offer services"
                 textTitle={[
                     "We are a team of Software Engineers",
                     "here you can meet us"
                 ]}
             />
-            {/* TO-DO PhotoAlbum component Ticket-138*/}
-            {/* TO-DO ExperienceTable component Ticket-102 */}
-            <BreakerTape
-                words={[
-                    "Hello",
-                    "World",
-                    "This",
-                    "Component",
-                    "Amazing",
-                    "Tests"
-                ]}
-                svg={Sample}
-            />
+            <div>
+                <ProfessionalExperiences />
+            </div>
+            <div
+                style={{
+                    height: "150px",
+                    position: "relative",
+                    overflow: "hidden"
+                }}
+            >
+                <div
+                    style={{
+                        height: "40px",
+                        width: "102%",
+                        position: "absolute",
+                        top: "0",
+                        left: "-1%"
+                    }}
+                >
+                    <BreakerTape
+                        words={[
+                            "Hello",
+                            "World",
+                            "This",
+                            "Component",
+                            "Amazing",
+                            "Tests"
+                        ]}
+                        svg={Sample}
+                    />
+                </div>
+            </div>
             <div
                 style={{
                     display: "flex",
@@ -86,7 +90,15 @@ export default function TheTeamPage() {
                     <div style={{ alignSelf: "center" }}>whatever children</div>
                 </CardSimpleRender>
             </div>
-            <div>
+            <div
+                style={{
+                    padding: "40px 0px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    gap: "20px"
+                }}
+            >
                 <CardBanner
                     title="Let's connect and create something amazing!"
                     description="Reach out to us for collaborations, inquiries, and more."
