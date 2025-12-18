@@ -1,0 +1,32 @@
+[
+    {
+        "cargo": "Software Engineer",
+        "empresa": "UNISOT",
+        "datas": "Jan 2020 – Jun 2022",
+        "localizacao": "Lisboa, Portugal",
+        "descricao": "Desenvolvi novas funcionalidades e otimizei serviços backend em Node.js e microserviços.",
+        "colaboradores": [
+            "https://i.pravatar.cc/100?img=1",
+            "https://i.pravatar.cc/100?img=2",
+            "https://i.pravatar.cc/100?img=3"
+        ]
+    },
+    {
+        "cargo": "Software Engineer",
+        "empresa": "DEXPER",
+        "datas": "Jul 2018 – Dez 2019",
+        "localizacao": "Porto, Portugal",
+        "descricao": "Participei no desenvolvimento full-stack de uma aplicação web, usando React para o frontend e Express no backend."
+    },
+    {
+        "cargo": "Software Engineer",
+        "empresa": "OPTIMIZER",
+        "datas": "Set 2022 – Presente",
+        "localizacao": "Lisboa, Portugal",
+        "descricao": "Lidero uma equipa de desenvolvimento ágil para entrega de soluções web, coordenando sprints e integração contínua.",
+        "colaboradores": [
+            "https://i.pravatar.cc/100?img=4",
+            "https://i.pravatar.cc/100?img=5"
+        ]
+    }
+]
