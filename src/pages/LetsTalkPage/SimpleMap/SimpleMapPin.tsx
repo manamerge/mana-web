@@ -24,7 +24,7 @@ interface SimpleMapPinProps {
 export default function SimpleMapPin({
     lat,
     lng,
-    zoom = 13,
+    zoom = 2,
     width = "100%",
     height = "400px"
 }: SimpleMapPinProps) {
@@ -41,7 +41,7 @@ export default function SimpleMapPin({
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 />
                 <Marker position={[lat, lng]} icon={defaultIcon}>
-                    <Popup>Localização selecionada</Popup>
+                    <Popup>We are here!</Popup>
                 </Marker>
             </MapContainer>
         </MapWrapper>

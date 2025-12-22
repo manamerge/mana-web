@@ -6,12 +6,12 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+    background: linear-gradient(145deg, #000000ff, #000000ff);
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     max-width: 450px;
-    margin: 50px auto;
+    margin: 0px auto;
 `;
 
 export const Title = styled(Text)`

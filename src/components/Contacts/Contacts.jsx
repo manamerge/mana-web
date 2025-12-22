@@ -34,8 +34,8 @@ function Contacts() {
 
     return (
         <Container>
-            <Title color="#fff" fontWeight="600" fontSize="27px">
-                Contacts
+            <Title color="#ddd" fontWeight="600" fontSize="27px">
+                Contact Us
             </Title>
 
             <StyledForm onSubmit={onSubmit}>

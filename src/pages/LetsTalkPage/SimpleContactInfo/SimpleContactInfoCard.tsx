@@ -14,7 +14,6 @@ export default function SimpleContactInfoCard({
 }: ContactInfoProps) {
     return (
         <Card>
-            <h3>Contacts</h3>
             <InfoItem>
                 <strong>Adress:</strong> {address}
             </InfoItem>

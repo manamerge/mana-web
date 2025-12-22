@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
     padding: 16px;
     border-radius: 12px;
-    background: #fff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    max-width: 400px;
+    background: #000;
+    color: #ddd;
 `;
 
 export const InfoItem = styled.p`
