@@ -1,10 +1,10 @@
 [
     {
-        "cargo": "Software Engineer",
-        "empresa": "UNISOT",
-        "datas": "Jan 2020 – Jun 2022",
-        "localizacao": "Lisboa, Portugal",
-        "descricao": "Desenvolvi novas funcionalidades e otimizei serviços backend em Node.js e microserviços.",
+        "cargo": "Full-stack Developer",
+        "empresa": "Sparkle It",
+        "datas": "2016 – 2017",
+        "localizacao": "Viana do Castelo, Portugal",
+        "descricao": "Desenvolvimento full-stack de produtos digitais, incluindo redes sociais e aplicações móveis com geolocalização. Forte foco em transformar requisitos de negócio em soluções técnicas funcionais.",
         "colaboradores": [
             "https://i.pravatar.cc/100?img=1",
             "https://i.pravatar.cc/100?img=2",
@@ -13,20 +13,63 @@
     },
     {
         "cargo": "Software Engineer",
-        "empresa": "DEXPER",
-        "datas": "Jul 2018 – Dez 2019",
+        "empresa": "Optimizer-ABS",
+        "datas": "2017 – 2018",
         "localizacao": "Porto, Portugal",
-        "descricao": "Participei no desenvolvimento full-stack de uma aplicação web, usando React para o frontend e Express no backend."
+        "descricao": "Arquitetura e desenvolvimento frontend de aplicações para hospitais e monitorização da navegação no rio Douro. Enfoque em performance, manutenção e qualidade do código."
     },
     {
-        "cargo": "Software Engineer",
-        "empresa": "OPTIMIZER",
-        "datas": "Set 2022 – Presente",
-        "localizacao": "Lisboa, Portugal",
-        "descricao": "Lidero uma equipa de desenvolvimento ágil para entrega de soluções web, coordenando sprints e integração contínua.",
+        "cargo": "CEO & Frontend Engineer",
+        "empresa": "Codegen Studio / Unisot",
+        "datas": "2018 – 2021",
+        "localizacao": "Remote",
+        "descricao": "Co-fundador e responsável pela arquitetura frontend de plataformas de supply-chain baseadas em blockchain. Desenvolvimento de aplicações para tracking, KPIs e troca de informação entre participantes.",
         "colaboradores": [
             "https://i.pravatar.cc/100?img=4",
             "https://i.pravatar.cc/100?img=5"
         ]
+    },
+    {
+        "cargo": "CEO & Frontend Engineer",
+        "empresa": "Nogueira Ltd. + DEXPER",
+        "datas": "2021 – 2024",
+        "localizacao": "Remote",
+        "descricao": "Liderança técnica e de produto no desenvolvimento de uma plataforma digital de eventos. Responsável por arquitetura frontend, design systems, pipelines CI/CD e metodologias ágeis."
+    },
+
+    {
+        "cargo": "A - Full-stack Developer",
+        "empresa": "Sparkle It",
+        "datas": "2016 – 2017",
+        "localizacao": "Viana do Castelo, Portugal",
+        "descricao": "Desenvolvimento de aplicações web e mobile, incluindo uma app de geolocalização com PostGIS e uma rede social com chat e newsfeed. Forte contacto com levantamento de requisitos e transformação das necessidades do cliente em soluções técnicas."
+    },
+    {
+        "cargo": "Frontend Developer",
+        "empresa": "Optimizer / SPMS",
+        "datas": "2017 – 2018",
+        "localizacao": "Porto, Portugal",
+        "descricao": "Trabalho em sistemas nacionais de saúde, com foco na modernização de back-offices hospitalares e visualização de dados estatísticos. Experiência sólida em trabalho colaborativo e metodologia Scrum."
+    },
+    {
+        "cargo": "Software Engineer",
+        "empresa": "Airbus",
+        "datas": "2019 – 2020",
+        "localizacao": "Toulouse, France",
+        "descricao": "Desenvolvimento de aplicações web internas para gestão de dados da linha final de montagem de aeronaves. Colaboração diária num ambiente internacional e multidisciplinar."
+    },
+    {
+        "cargo": "Frontend Engineer",
+        "empresa": "Euronext",
+        "datas": "2020 – 2021",
+        "localizacao": "Remote",
+        "descricao": "Implementação de um design system reutilizável e criação de componentes escaláveis. Reestruturação da arquitetura frontend de uma aplicação crítica para entrada de empresas no mercado bolsista."
+    },
+    {
+        "cargo": "Full-stack Engineer",
+        "empresa": "Giffits",
+        "datas": "2022 – 2024",
+        "localizacao": "Remote / Hamburg, Germany",
+        "descricao": "Integração de serviços cloud e arquiteturas serverless. Desenvolvimento de soluções escaláveis para processos de personalização e automação em contexto de marketing digital."
     }
 ]

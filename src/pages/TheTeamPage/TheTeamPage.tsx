@@ -15,8 +15,8 @@ export default function TheTeamPage() {
         <div style={{ background: "#121212" }}>
             <Header
                 textTitle={[
-                    "We are a team of Software Engineers",
-                    "here you can meet us"
+                    "Two engineers. One shared vision.",
+                    "We design, build and scale digital products with purpose."
                 ]}
             />
             <div>
@@ -40,12 +40,38 @@ export default function TheTeamPage() {
                 >
                     <BreakerTape
                         words={[
-                            "Hello",
-                            "World",
-                            "This",
-                            "Component",
-                            "Amazing",
-                            "Tests"
+                            "Collaboration",
+                            "Engineering",
+                            "Frontend",
+                            "Full-stack",
+                            "Scalability",
+                            "Design System",
+                            "Performance",
+                            "Clean Code",
+                            "Agile",
+                            "Scrum",
+                            "Remote Work",
+                            "Innovation",
+                            "Problem Solving",
+                            "Architecture",
+                            "Ownership",
+                            "Reliability",
+                            "Product Thinking",
+                            "APIs",
+                            "Testing",
+                            "User Experience",
+                            "Accessibility",
+                            "Code Reviews",
+                            "Documentation",
+                            "Teamwork",
+                            "Creativity",
+                            "Leadership",
+                            "Optimization",
+                            "Monitoring",
+                            "Security",
+                            "Automation",
+                            "Feedback",
+                            "Learning"
                         ]}
                         svg={Sample}
                     />
@@ -63,29 +89,29 @@ export default function TheTeamPage() {
             >
                 <CardSimpleRender
                     icon={Sample}
-                    title="Card Title"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Technology & Side Projects"
+                    description="Exploring new frameworks, tools and architectures through continuous experimentation and personal projects."
                 >
                     <div style={{ alignSelf: "center" }}>whatever children</div>
                 </CardSimpleRender>
                 <CardSimpleRender
                     icon={Sample}
-                    title="Card Title"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Sports & Well-being"
+                    description="Physical activity as a way to maintain focus, discipline and long-term consistency."
                 >
                     <div style={{ alignSelf: "center" }}>whatever children</div>
                 </CardSimpleRender>
                 <CardSimpleRender
                     icon={Sample}
-                    title="Card Title"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Travel & Cultures"
+                    description="International experiences that foster adaptability, communication skills and global mindset."
                 >
                     <div style={{ alignSelf: "center" }}>whatever children</div>
                 </CardSimpleRender>
                 <CardSimpleRender
                     icon={Sample}
-                    title="Card Title"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Learning & Curiosity"
+                    description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
                 >
                     <div style={{ alignSelf: "center" }}>whatever children</div>
                 </CardSimpleRender>
