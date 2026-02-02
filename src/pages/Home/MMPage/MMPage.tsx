@@ -36,8 +36,8 @@ export default function MMPage() {
                     buttonRightText="Contact us"
                     headingTitle="Welcome to ManaMerge"
                     iconDot={iconDot}
-                    iconLeft={iconLeft}
-                    iconRight={iconRight}
+                    buttonLeftIcon={iconLeft}
+                    buttonRightIcon={iconRight}
                     iconTop={iconTop}
                     textBanner="available to offer services"
                     textTitle={[
@@ -64,51 +64,61 @@ export default function MMPage() {
                     iconMinus={iconLeft}
                     iconPlus={iconRight}
                 />
-                <CardTeaser
-                    company="ManaMerge"
-                    year="2025"
-                    title="Curating AR experiences while travelling"
-                    onClick={() => console.log("Button clicked!")}
-                    buttonName="View Case Study"
-                    checks={[
-                        "Onboarding increased to 12%.",
-                        "New users signups increased by 32%.",
-                        "Engagement increased by 20%."
-                    ]}
-                    svg={Sample}
-                    cardImageSrc={sampleImage}
-                    separator={true}
-                />
-                <CardTeaser
-                    company="ManaMerge"
-                    year="2025"
-                    title="Curating AR experiences while travelling"
-                    onClick={() => console.log("Button clicked!")}
-                    buttonName="View Case Study"
-                    checks={[
-                        "Onboarding increased to 12%.",
-                        "New users signups increased by 32%.",
-                        "Engagement increased by 20%."
-                    ]}
-                    svg={Sample}
-                    cardImageSrc={sampleImage}
-                    separator={true}
-                />
-                <CardTeaser
-                    company="ManaMerge"
-                    year="2025"
-                    title="Curating AR experiences while travelling"
-                    onClick={() => console.log("Button clicked!")}
-                    buttonName="View Case Study"
-                    checks={[
-                        "Onboarding increased to 12%.",
-                        "New users signups increased by 32%.",
-                        "Engagement increased by 20%."
-                    ]}
-                    svg={Sample}
-                    cardImageSrc={sampleImage}
-                    separator={true}
-                />
+                <div
+                    style={{
+                        width: "100%",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        gap: "20px 0px"
+                    }}
+                >
+                    <CardTeaser
+                        company="ManaMerge"
+                        year="2025"
+                        title="Curating AR experiences while travelling"
+                        onClick={() => console.log("Button clicked!")}
+                        buttonName="View Case Study"
+                        checks={[
+                            "Onboarding increased to 12%.",
+                            "New users signups increased by 32%.",
+                            "Engagement increased by 20%."
+                        ]}
+                        svg={Sample}
+                        cardImageSrc={sampleImage}
+                        separator={true}
+                    />
+                    <CardTeaser
+                        company="ManaMerge"
+                        year="2025"
+                        title="Curating AR experiences while travelling"
+                        onClick={() => console.log("Button clicked!")}
+                        buttonName="View Case Study"
+                        checks={[
+                            "Onboarding increased to 12%.",
+                            "New users signups increased by 32%.",
+                            "Engagement increased by 20%."
+                        ]}
+                        svg={Sample}
+                        cardImageSrc={sampleImage}
+                        separator={true}
+                    />
+                    <CardTeaser
+                        company="ManaMerge"
+                        year="2025"
+                        title="Curating AR experiences while travelling"
+                        onClick={() => console.log("Button clicked!")}
+                        buttonName="View Case Study"
+                        checks={[
+                            "Onboarding increased to 12%.",
+                            "New users signups increased by 32%.",
+                            "Engagement increased by 20%."
+                        ]}
+                        svg={Sample}
+                        cardImageSrc={sampleImage}
+                        separator={true}
+                    />
+                </div>
                 <div
                     style={{
                         display: "flex",

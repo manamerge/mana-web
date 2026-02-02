@@ -9,15 +9,20 @@ import "./TheTeamPage.css";
 // Assets breaker tape and cards
 import { ReactComponent as Sample } from "./assets/sample.svg";
 import ProfessionalExperiences from "./components/ProfessionalExperiences";
+import SimpleMapPin from "../../pages/LetsTalkPage/SimpleMap/SimpleMapPin";
 
 export default function TheTeamPage() {
     return (
         <div style={{ background: "#121212" }}>
             <Header
+                moleculeVariant="secondary"
                 textTitle={[
                     "Two engineers. One shared vision.",
                     "We design, build and scale digital products with purpose."
                 ]}
+                headingTitle="Meet The Team"
+                withOverlay
+                imageURLBackground="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29sbGFib3JhdGlvbnN8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
             />
             <div>
                 <ProfessionalExperiences />
@@ -87,12 +92,20 @@ export default function TheTeamPage() {
                     justifyContent: "center"
                 }}
             >
-                <CardSimpleRender
-                    icon={Sample}
-                    title="Technology & Side Projects"
-                    description="Exploring new frameworks, tools and architectures through continuous experimentation and personal projects."
-                >
-                    <div style={{ alignSelf: "center" }}>whatever children</div>
+                <CardSimpleRender>
+                    <div
+                        style={{
+                            justifySelf: "center",
+                            width: "100%"
+                        }}
+                    >
+                        <SimpleMapPin
+                            lat={45.811}
+                            lng={15.98}
+                            zoom={15}
+                            height="300px"
+                        />
+                    </div>
                 </CardSimpleRender>
                 <CardSimpleRender
                     icon={Sample}

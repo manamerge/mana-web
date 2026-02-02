@@ -45,6 +45,7 @@ const Title = styled.h3`
     display: flex;
     gap: 5px;
     align-items: center;
+    flex-wrap: wrap;
     @media (max-width: 700px) {
         display: unset;
     }
@@ -103,7 +104,8 @@ const ProfessionalExperiences: React.FC = () => {
                                     </Gradient>
                                 </Title>
                                 <Period>
-                                    {exp.datas} - {exp.localizacao}
+                                    {exp.datas}
+                                    {exp.localizacao}
                                 </Period>
                             </LeftRightBox>
                             <LeftRightBox>
