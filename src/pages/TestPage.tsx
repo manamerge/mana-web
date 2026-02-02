@@ -132,8 +132,8 @@ function LetsTalkPage() {
                 buttonRightText="Contact us"
                 headingTitle="Welcome to ManaMerge"
                 iconDot={iconDot}
-                iconLeft={iconLeft}
-                iconRight={iconRight}
+                buttonLeftIcon={iconLeft}
+                buttonRightIcon={iconRight}
                 iconTop={iconTop}
                 textBanner="available to offer services"
                 textTitle={[

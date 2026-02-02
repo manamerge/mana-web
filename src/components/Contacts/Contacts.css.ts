@@ -19,6 +19,8 @@ export const Title = styled(Text)`
     font-weight: 700;
     font-size: 28px;
     letter-spacing: 0.5px;
+    justify-self: center;
+    padding: 30px 0;
 `;
 
 export const StyledForm = styled.form`

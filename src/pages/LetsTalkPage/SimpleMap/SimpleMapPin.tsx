@@ -26,7 +26,7 @@ export default function SimpleMapPin({
     lng,
     zoom = 2,
     width = "100%",
-    height = "400px"
+    height
 }: SimpleMapPinProps) {
     return (
         <MapWrapper style={{ width, height }}>
@@ -50,8 +50,8 @@ export default function SimpleMapPin({
 
 const MapWrapper = styled.div`
     width: 100%;
-    height: 400px;
-    border-radius: 12px;
+    /* height: 400px; */
+    border-radius: 23px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 `;

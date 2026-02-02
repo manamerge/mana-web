@@ -2,9 +2,13 @@ import React from "react";
 import Contacts from "../../components/Contacts/Contacts";
 import SimpleMapPin from "./SimpleMap/SimpleMapPin";
 import ContactInfoCard from "./SimpleContactInfo/SimpleContactInfoCard";
+import { Title } from "../../components/Contacts/Contacts.css";
 export default function LetsTalkPage() {
     return (
         <div style={{ background: "#000" }}>
+            <Title color="#ddd" fontWeight="600" fontSize="27px">
+                Contact Us
+            </Title>
             <Contacts />
             <div
                 style={{
@@ -12,6 +16,10 @@ export default function LetsTalkPage() {
                     marginBottom: "50px"
                 }}
             ></div>
+
+            <Title color="#ddd" fontWeight="600" fontSize="27px">
+                Where are we located?
+            </Title>
             <div
                 style={{
                     justifySelf: "center",
@@ -24,7 +32,7 @@ export default function LetsTalkPage() {
                     lng={15.98}
                     zoom={15}
                     width="auto"
-                    height="400px"
+                    height="300px"
                 />
             </div>
             <ContactInfoCard

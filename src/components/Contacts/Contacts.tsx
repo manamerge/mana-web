@@ -1,17 +1,16 @@
 import React from "react";
 import {
     Container,
-    Title,
     StyledForm,
     StyledInput,
     StyledTextarea,
     StyledButton
-} from "./Contacts.css.ts";
+} from "./Contacts.css";
 
 function Contacts() {
-    const onSubmit = async (event) => {
+    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const formData = new FormData(event.target);
+        const formData = new FormData(event.currentTarget);
 
         formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
 
@@ -34,10 +33,6 @@ function Contacts() {
 
     return (
         <Container>
-            <Title color="#ddd" fontWeight="600" fontSize="27px">
-                Contact Us
-            </Title>
-
             <StyledForm onSubmit={onSubmit}>
                 <StyledInput
                     type="text"
