@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "styled-components";
 import Theme, { GlobalStyles } from "./utils/Theme";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/Home/MMPage/MMPage";
+import HomePage from "./pages/MMPage/MMPage";
 import AboutPage from "./pages/TheTeamPage/TheTeamPage";
 import SolutionsPage from "./pages/WhyUsPage/WhyUsPage";
 import NotFoundPage from "./pages/NotFound/NotFoundPage";
