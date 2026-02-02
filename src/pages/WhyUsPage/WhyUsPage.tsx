@@ -3,7 +3,9 @@ import {
     Header,
     CardTeaser,
     CardSimpleRender,
-    CardBanner
+    CardBanner,
+    Heading,
+    Text
 } from "@manamerge/mana-atomic-ui";
 import { ReactComponent as iconTop } from "../../icons/iconTop.svg";
 import { ReactComponent as iconDot } from "../../icons/iconDot.svg";
@@ -25,21 +27,23 @@ export default function WhyUsPage() {
             }}
         >
             <Header
-                buttonLeftClick={() => {}}
-                buttonLeftText="Let's talk"
-                buttonRightClick={() => {}}
-                buttonRightText="Contact us"
+                moleculeVariant="secondary"
                 headingTitle="Welcome to ManaMerge"
-                iconDot={iconDot}
-                iconLeft={iconLeft}
-                iconRight={iconRight}
-                iconTop={iconTop}
-                textBanner="available to offer services"
                 textTitle={[
                     "We are a team of Software Engineers",
                     "Our interest goes to all developing environments"
                 ]}
             />
+            <Heading>Why Us</Heading>
+            <Text>
+                ManaMerge is a team of passionate software engineers dedicated
+                to creating innovative solutions for all developing
+                environments. We excel in delivering high-quality software that
+                meets the unique needs of our clients. Our team is committed to
+                staying at the forefront of technology, ensuring that we provide
+                cutting-edge solutions that drive success and growth for
+                businesses of all sizes.
+            </Text>
             <CardTeaser
                 company="ManaMerge"
                 year="2025"
