@@ -1,34 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Container,
     StyledForm,
     StyledInput,
-    StyledTextarea,
-    StyledButton
+    StyledTextarea
 } from "./Contacts.css";
+import { Button } from "@manamerge/mana-atomic-ui";
 
-function Contacts() {
+export default function ContactForm() {
+    const [result, setResult] = useState("");
+
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-
-        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
-
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-
-        const res = await fetch("https://api.web3forms.com/submit", {
+        const formData = new FormData(event.target as HTMLFormElement);
+        formData.append(
+            "access_key",
+            process.env.REACT_APP_DEV_EMAIL_ACCESS_TOKEN || ""
+        );
+        // Emails are being sent to emailcafecafe@gmail.com
+        const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-            },
-            body: json
-        }).then((res) => res.json());
+            body: formData
+        });
 
-        if (res.success) {
-            console.log("Success", res);
-        }
+        const data = await response.json();
+        setResult(data.success ? "Success!" : "Error");
     };
 
     return (
@@ -47,10 +43,16 @@ function Contacts() {
                     required
                 />
                 <StyledTextarea name="message" placeholder="Message" required />
-                <StyledButton type="submit">Send Message</StyledButton>
+                {!result && <Button type="submit">Send Message</Button>}
+                {result && (
+                    <>
+                        <Button disabled>Message sent!</Button>
+                        <p>{result}</p>
+                        <p>Thank you for your message!</p>
+                        <p>We will get back to you soon!</p>
+                    </>
+                )}
             </StyledForm>
         </Container>
     );
 }
-
-export default Contacts;
