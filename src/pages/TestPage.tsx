@@ -52,36 +52,39 @@ function LetsTalkPage() {
                     width: "full"
                 }}
             >
+                <Text variant="primary-heavy">
+                    Testing all Mana Atomic UI components
+                </Text>
                 <Gradient variant="primary">
-                    <Text variant="light">
+                    <Text variant="primary-heavy">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Culpa minima aspernatur officiis, saepe aliquid
                         possimus expedita ad ut sint fugiat?
                     </Text>
                 </Gradient>
                 <Gradient variant="secondary">
-                    <Text variant="regular">
+                    <Text variant="primary-regular">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Culpa minima aspernatur officiis, saepe aliquid
                         possimus expedita ad ut sint fugiat?
                     </Text>
                 </Gradient>
                 <Gradient variant="tertiary">
-                    <Text variant="medium">
+                    <Text variant="primary-medium">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Culpa minima aspernatur officiis, saepe aliquid
                         possimus expedita ad ut sint fugiat?
                     </Text>
                 </Gradient>
                 <Gradient variant="primary">
-                    <Text variant="bold">
+                    <Text variant="primary-bold">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Culpa minima aspernatur officiis, saepe aliquid
                         possimus expedita ad ut sint fugiat?
                     </Text>
                 </Gradient>
                 <Gradient variant="secondary">
-                    <Text variant="heavy">
+                    <Text variant="primary-heavy">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Culpa minima aspernatur officiis, saepe aliquid
                         possimus expedita ad ut sint fugiat?
@@ -93,12 +96,12 @@ function LetsTalkPage() {
                 <Icon variant="small" svg={logo} />
                 <Icon variant="medium" svg={logo} />
                 <Icon variant="large" svg={logo} />
-                <Heading variant="h1">H1 in the ZONE!</Heading>
-                <Heading variant="h2">H2 in the ZONE!</Heading>
-                <Heading variant="h3">H3 in the ZONE!</Heading>
-                <Heading variant="h4">H4 in the ZONE!</Heading>
-                <Heading variant="h5">H5 in the ZONE!</Heading>
-                <Heading variant="h6">H6 in the ZONE!</Heading>
+                <Heading as="h1">H1 in the ZONE!</Heading>
+                <Heading as="h2">H2 in the ZONE!</Heading>
+                <Heading as="h3">H3 in the ZONE!</Heading>
+                <Heading as="h4">H4 in the ZONE!</Heading>
+                <Heading as="h5">H5 in the ZONE!</Heading>
+                <Heading as="h6">H6 in the ZONE!</Heading>
 
                 <Link href="https://www.google.com" variant="light">
                     Link here!
@@ -120,11 +123,11 @@ function LetsTalkPage() {
             <Button variant="primary">Button secondary primary</Button>
             <Button variant="secondary">Button secondary</Button>
 
-            <Text variant="light">Gilmer font here!</Text>
-            <Text variant="regular">Gilmer font here!</Text>
-            <Text variant="medium">Gilmer font here!</Text>
-            <Text variant="bold">Gilmer font here!</Text>
-            <Text variant="heavy">Gilmer font here!</Text>
+            <Text variant="primary-light">Gilmer font here!</Text>
+            <Text variant="primary-regular">Gilmer font here!</Text>
+            <Text variant="primary-medium">Gilmer font here!</Text>
+            <Text variant="primary-bold">Gilmer font here!</Text>
+            <Text variant="primary-heavy">Gilmer font here!</Text>
             <Header
                 buttonLeftClick={() => {}}
                 buttonLeftText="Let's talk"

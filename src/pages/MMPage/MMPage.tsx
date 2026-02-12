@@ -66,7 +66,9 @@ export default function MMPage() {
                     back-end systems.
                 </Text>
 
-                <Heading variant="h2">Featured Projects</Heading>
+                <Heading variant="primary" as="h2">
+                    Featured Projects
+                </Heading>
                 <Text>Some of our impact throughout the years includes:</Text>
                 <CardTeaser
                     company="dexper"
@@ -169,7 +171,7 @@ export default function MMPage() {
                 >
                     <CardSimpleRender
                         icon={Sample}
-                        cardClick={() => navigate("/theteam")}
+                        onClick={() => navigate("/theteam")}
                         title="Who are we?"
                         description="An engineering team with international experience across Europe, working
 with companies ranging from innovative startups to global enterprises. We’ve contributed to projects at organizations such as Github, Airbus, Euronext and Hashicorp, and helped build
@@ -181,7 +183,7 @@ products in sectors including finance, healthcare, aviation, blockchain, e-comme
                     </CardSimpleRender>
                     <CardSimpleRender
                         icon={Sample}
-                        cardClick={() => navigate("/whyus")}
+                        onClick={() => navigate("/whyus")}
                         title="What makes us different?"
                         description="We combine deep technical expertise with a strong focus on user-centered design and business impact. Our collaborative approach ensures that we work closely with clients to understand their unique challenges and deliver tailored solutions that drive real results."
                     >
@@ -191,7 +193,7 @@ products in sectors including finance, healthcare, aviation, blockchain, e-comme
                     </CardSimpleRender>
                     <CardSimpleRender
                         icon={Sample}
-                        cardClick={() => goToSite("https://storybook.js.org/")}
+                        onClick={() => goToSite("https://storybook.js.org/")}
                         title="UI/UX Systems & Component Libraries"
                         description="Figma, Storybook, Design Systems"
                     >
