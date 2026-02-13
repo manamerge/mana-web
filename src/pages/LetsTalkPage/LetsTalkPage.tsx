@@ -2,24 +2,35 @@ import React from "react";
 import Contacts from "../../components/Contacts/Contacts";
 import SimpleMapPin from "./SimpleMap/SimpleMapPin";
 import ContactInfoCard from "./SimpleContactInfo/SimpleContactInfoCard";
-import { Title } from "../../components/Contacts/Contacts.css";
+import { Heading } from "@manamerge/mana-atomic-ui";
 export default function LetsTalkPage() {
     return (
-        <div style={{ background: "#000" }}>
-            <Title color="#ddd" fontWeight="600" fontSize="27px">
-                Contact Us
-            </Title>
+        <div>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    margin: "40px 0"
+                }}
+            >
+                <Heading variant="primary" as="h1">
+                    Contact Us
+                </Heading>
+            </div>
             <Contacts />
             <div
                 style={{
-                    justifySelf: "center",
-                    marginBottom: "50px"
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    margin: "40px 0"
                 }}
-            ></div>
-
-            <Title color="#ddd" fontWeight="600" fontSize="27px">
-                Where are we located?
-            </Title>
+            >
+                <Heading variant="primary" as="h1">
+                    Where are we located?
+                </Heading>
+            </div>
             <div
                 style={{
                     justifySelf: "center",
@@ -36,9 +47,8 @@ export default function LetsTalkPage() {
                 />
             </div>
             <ContactInfoCard
-                address="Rua dos perdidinhos"
-                phone="+351 912 345 678"
-                email="contacto@blabla.com"
+                address="Škorpikova 34, 10000, Zagreb, Croatia"
+                email="manamerge@gmail.com"
             />
         </div>
     );
