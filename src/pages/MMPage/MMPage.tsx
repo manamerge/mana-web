@@ -1,5 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { ReactComponent as JSIcon } from "./assets/sample.svg";
+import sparkleImage from "./assets/sparkle-maps.png";
+import ulsam from "./assets/ulsam-1.png";
+import apdl from "./assets/APDL-1.png";
+import unisot from "./assets/unisot.png";
+import dexper from "./assets/dexper.png";
+
+import { AtomText } from "./MMPage.css";
 
 // Components
 import {
@@ -10,7 +18,8 @@ import {
     Header,
     Accordion,
     Text,
-    Heading
+    Heading,
+    Pint3
 } from "@manamerge/mana-atomic-ui";
 
 // Assets
@@ -32,7 +41,6 @@ export default function MMPage() {
         <>
             <div
                 style={{
-                    marginTop: "50px",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -55,19 +63,113 @@ export default function MMPage() {
                         "Our interest goes to all developing environments"
                     ]}
                 />
-                <Text>
+                <Text variant="primary-heavy" vFontSize="xxl">
                     ManaMerge is a software development studio formed by two
                     senior developers with over 7 years of professional
                     experience each.
                 </Text>
-                <Text>
+                <AtomText>
                     We design and build reliable, scalable, and user-centered
                     digital products — from modern web platforms to robust
                     back-end systems.
-                </Text>
+                </AtomText>
 
-                <Heading variant="h2">Featured Projects</Heading>
+                <Heading variant="primary" as="h1">
+                    Featured Projects
+                </Heading>
                 <Text>Some of our impact throughout the years includes:</Text>
+
+                <CardTeaser
+                    moleculeVariant="primary"
+                    company="SPARKLEIT"
+                    year="2016 - 2017"
+                    title="Full-Stack Geolocation"
+                    separator
+                    svg={JSIcon}
+                    checks={[
+                        "Mobile GPS capture",
+                        "Geospatial data flow",
+                        "Map polygon tools"
+                    ]}
+                    cardImageSrc={sparkleImage}
+                />
+
+                <CardTeaser
+                    separator
+                    moleculeVariant="primary"
+                    company="ULSAM"
+                    year="2017 - 2018"
+                    title="Frontend Developer Hospital App"
+                    buttonName="Stonks"
+                    onClick={() =>
+                        console.log(
+                            "https://play.google.com/store/apps/details?id=com.seamlink.gatewaybox.ulsam&pli=1"
+                        )
+                    }
+                    svg={JSIcon}
+                    checks={[
+                        "Feature refactoring tasks",
+                        "Performance-focused updates",
+                        "SOAP service integrations"
+                    ]}
+                    cardImageSrc={ulsam}
+                />
+
+                <CardTeaser
+                    separator
+                    moleculeVariant="primary"
+                    company="APDL"
+                    year="2017 - 2018"
+                    title="Frontend River Monitoring"
+                    onClick={() =>
+                        console.log(
+                            "https://play.google.com/store/apps/details?id=com.seamlink.gatewaybox.apdl2"
+                        )
+                    }
+                    buttonName="Stonks"
+                    svg={JSIcon}
+                    checks={[
+                        "UI architecture setup",
+                        "IOT data flows",
+                        "REST API consumption"
+                    ]}
+                    cardImageSrc={apdl}
+                />
+
+                <CardTeaser
+                    separator
+                    moleculeVariant="primary"
+                    company="UNISOT"
+                    year="2018 - 2021"
+                    title="Frontend Engineer Blockchain Supply Chain"
+                    onClick={() => console.log("https://unisot.com")}
+                    buttonName="Stonks"
+                    svg={JSIcon}
+                    checks={[
+                        "Cross-platform integrations",
+                        "Modular UI systems",
+                        "Blockchain-based features"
+                    ]}
+                    cardImageSrc={unisot}
+                />
+
+                <CardTeaser
+                    separator
+                    moleculeVariant="primary"
+                    company="DEXPER"
+                    year="2021 - 2024"
+                    title="Frontend Engineer Event Platform"
+                    onClick={() => console.log("https://dexper.io/")}
+                    buttonName="Stonks"
+                    svg={JSIcon}
+                    checks={[
+                        "Scalable UI architecture",
+                        "Reusable component library",
+                        "API-driven workflows"
+                    ]}
+                    cardImageSrc={dexper}
+                />
+
                 <CardTeaser
                     company="dexper"
                     year="2025"
@@ -157,7 +259,7 @@ export default function MMPage() {
                     architecture - Clear communication - Agile and collaborative
                     workflows - Focus on business impact, not just features
                 </Text>
-                <div
+                {/* <div
                     style={{
                         display: "flex",
                         flexDirection: "row",
@@ -169,7 +271,7 @@ export default function MMPage() {
                 >
                     <CardSimpleRender
                         icon={Sample}
-                        cardClick={() => navigate("/theteam")}
+                        onClick={() => navigate("/theteam")}
                         title="Who are we?"
                         description="An engineering team with international experience across Europe, working
 with companies ranging from innovative startups to global enterprises. We’ve contributed to projects at organizations such as Github, Airbus, Euronext and Hashicorp, and helped build
@@ -181,7 +283,7 @@ products in sectors including finance, healthcare, aviation, blockchain, e-comme
                     </CardSimpleRender>
                     <CardSimpleRender
                         icon={Sample}
-                        cardClick={() => navigate("/whyus")}
+                        onClick={() => navigate("/whyus")}
                         title="What makes us different?"
                         description="We combine deep technical expertise with a strong focus on user-centered design and business impact. Our collaborative approach ensures that we work closely with clients to understand their unique challenges and deliver tailored solutions that drive real results."
                     >
@@ -191,7 +293,7 @@ products in sectors including finance, healthcare, aviation, blockchain, e-comme
                     </CardSimpleRender>
                     <CardSimpleRender
                         icon={Sample}
-                        cardClick={() => goToSite("https://storybook.js.org/")}
+                        onClick={() => goToSite("https://storybook.js.org/")}
                         title="UI/UX Systems & Component Libraries"
                         description="Figma, Storybook, Design Systems"
                     >
@@ -217,6 +319,52 @@ products in sectors including finance, healthcare, aviation, blockchain, e-comme
                             svg={Sample}
                         />
                     </CardSimpleRender>
+                </div> */}
+                <div style={{ backgroundColor: "lightblue" }}>
+                    <Pint3
+                        cards={[
+                            <div key={1}>texto</div>,
+                            <CardSimpleRender
+                                key={2}
+                                icon={Sample}
+                                onClick={() => navigate("/theteam")}
+                                title="Who are we?"
+                                description="An engineering team with international experience across Europe, working
+with companies ranging from innovative startups to global enterprises. We’ve contributed to projects at organizations such as Github, Airbus, Euronext and Hashicorp, and helped build
+products in sectors including finance, healthcare, aviation, blockchain, e-commerce, and digital events."
+                            >
+                                <div style={{ alignSelf: "center" }}>
+                                    whatever children
+                                </div>
+                            </CardSimpleRender>,
+                            <CardSimpleRender
+                                key={3}
+                                icon={Sample}
+                                title="UI/UX Systems & Component Libraries"
+                                description="Figma, Storybook, Design Systems"
+                            >
+                                <div style={{ alignSelf: "center" }}>
+                                    whatever children
+                                </div>
+                            </CardSimpleRender>,
+                            <CardSimpleRender
+                                key={4}
+                                icon={Sample}
+                                onClick={() =>
+                                    goToSite("https://storybook.js.org/")
+                                }
+                                title="UI/UX Systems & Component Libraries"
+                                description="Figma, Storybook, Design Systems"
+                            >
+                                <div style={{ alignSelf: "center" }}>
+                                    whatever children
+                                </div>
+                            </CardSimpleRender>,
+                            <div key={5}>texto</div>,
+                            <div key={6}>texto</div>,
+                            <div key={7}>texto</div>
+                        ]}
+                    ></Pint3>
                 </div>
                 <BreakerTape
                     words={[
