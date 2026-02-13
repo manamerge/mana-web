@@ -52,9 +52,6 @@ const Title = styled.h3`
 `;
 
 const Period = styled.div`
-    font-style: italic;
-    font-size: 0.9rem;
-    color: #bbbbbb;
     margin-bottom: 0.5rem;
 `;
 
@@ -63,11 +60,6 @@ const CollaboratedWith = styled.div`
     font-size: 0.9rem;
     color: #bbbbbb;
     margin-top: 1rem;
-`;
-
-const Description = styled.p`
-    margin: 0;
-    line-height: 1.4;
 `;
 
 const ColaboradoresLine = styled.div`
@@ -95,22 +87,40 @@ const ProfessionalExperiences: React.FC = () => {
                     <>
                         <Card key={index}>
                             <LeftRightBox>
-                                <Title>
+                                <Text variant="primary-medium" vFontSize="lg">
                                     {exp.cargo}
+                                </Text>
+                                <Title>
                                     <Gradient variant="primary">
-                                        <Text variant="heavy">
+                                        <Text
+                                            variant="primary-heavy"
+                                            vFontSize="lg"
+                                        >
                                             {"@" + exp.empresa}
                                         </Text>
                                     </Gradient>
                                 </Title>
                                 <Period>
-                                    {exp.datas}
-                                    {exp.localizacao}
+                                    <Text
+                                        variant="primary-light"
+                                        vFontSize="sm"
+                                    >
+                                        {exp.datas}
+                                    </Text>
+                                    {exp.localizacao && (
+                                        <Text
+                                            variant="primary-light"
+                                            vFontSize="sm"
+                                        >
+                                            {exp.localizacao}
+                                        </Text>
+                                    )}
                                 </Period>
                             </LeftRightBox>
                             <LeftRightBox>
-                                <Description>{exp.descricao}</Description>
-
+                                <Text variant="primary-medium" vFontSize="md">
+                                    {exp.descricao}
+                                </Text>
                                 {exp.colaboradores &&
                                     exp.colaboradores.length > 0 && (
                                         <>

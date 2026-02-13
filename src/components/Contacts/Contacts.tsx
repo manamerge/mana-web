@@ -3,9 +3,10 @@ import {
     Container,
     StyledForm,
     StyledInput,
-    StyledTextarea
+    StyledTextarea,
+    StyledButton
 } from "./Contacts.css";
-import { Button } from "@manamerge/mana-atomic-ui";
+import { Text } from "@manamerge/mana-atomic-ui";
 
 export default function ContactForm() {
     const [result, setResult] = useState("");
@@ -43,14 +44,31 @@ export default function ContactForm() {
                     required
                 />
                 <StyledTextarea name="message" placeholder="Message" required />
-                {!result && <Button type="submit">Send Message</Button>}
-                {result && (
+                {!result && (
+                    <StyledButton type="submit">Send Message</StyledButton>
+                )}
+                {result === "Success!" ? (
                     <>
-                        <Button disabled>Message sent!</Button>
-                        <p>{result}</p>
-                        <p>Thank you for your message!</p>
-                        <p>We will get back to you soon!</p>
+                        <StyledButton disabled>
+                            Message sent with {result}
+                        </StyledButton>
+
+                        <Text variant="primary-light" vFontSize="xs">
+                            Thank you for your message! We will get back to you
+                            soon!
+                        </Text>
                     </>
+                ) : (
+                    result === "Error" && (
+                        <Text
+                            variant="primary-light"
+                            vColor="red"
+                            vFontSize="xs"
+                        >
+                            Error sending message! Will fix soon, please try
+                            again later.
+                        </Text>
+                    )
                 )}
             </StyledForm>
         </Container>

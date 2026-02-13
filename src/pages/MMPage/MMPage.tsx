@@ -74,7 +74,7 @@ export default function MMPage() {
                     back-end systems.
                 </AtomText>
 
-                <Heading variant="primary" as="h1">
+                <Heading variant="primary" as="h2">
                     Featured Projects
                 </Heading>
                 <Text>Some of our impact throughout the years includes:</Text>
