@@ -34,7 +34,7 @@ export default function WhyUsPage() {
                     "Our interest goes to all developing environments"
                 ]}
             />
-            <Heading>Why Us</Heading>
+            <Heading as="h1">Why Us</Heading>
             <Text>
                 ManaMerge is a team of passionate software engineers dedicated
                 to creating innovative solutions for all developing

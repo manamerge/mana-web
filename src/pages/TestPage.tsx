@@ -93,12 +93,24 @@ function LetsTalkPage() {
                 <Icon variant="small" svg={logo} />
                 <Icon variant="medium" svg={logo} />
                 <Icon variant="large" svg={logo} />
-                <Heading variant="h1">H1 in the ZONE!</Heading>
-                <Heading variant="h2">H2 in the ZONE!</Heading>
-                <Heading variant="h3">H3 in the ZONE!</Heading>
-                <Heading variant="h4">H4 in the ZONE!</Heading>
-                <Heading variant="h5">H5 in the ZONE!</Heading>
-                <Heading variant="h6">H6 in the ZONE!</Heading>
+                <Heading variant="primary" as="h1">
+                    H1 in the ZONE!
+                </Heading>
+                <Heading variant="primary" as="h2">
+                    H2 in the ZONE!
+                </Heading>
+                <Heading variant="primary" as="h3">
+                    H3 in the ZONE!
+                </Heading>
+                <Heading variant="primary" as="h4">
+                    H4 in the ZONE!
+                </Heading>
+                <Heading variant="primary" as="h5">
+                    H5 in the ZONE!
+                </Heading>
+                <Heading variant="primary" as="h6">
+                    H6 in the ZONE!
+                </Heading>
 
                 <Link href="https://www.google.com" variant="light">
                     Link here!

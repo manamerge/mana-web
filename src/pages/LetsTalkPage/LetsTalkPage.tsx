@@ -6,7 +6,7 @@ import { Title } from "../../components/Contacts/Contacts.css";
 export default function LetsTalkPage() {
     return (
         <div style={{ background: "#000" }}>
-            <Title color="#ddd" fontWeight="600" fontSize="27px">
+            <Title color="#ddd" fontWeight="600">
                 Contact Us
             </Title>
             <Contacts />
@@ -17,7 +17,7 @@ export default function LetsTalkPage() {
                 }}
             ></div>
 
-            <Title color="#ddd" fontWeight="600" fontSize="27px">
+            <Title color="#ddd" fontWeight="600">
                 Where are we located?
             </Title>
             <div
