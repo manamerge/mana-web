@@ -3,15 +3,18 @@ import {
     BreakerTape,
     CardSimpleRender,
     CardBanner,
-    Header
+    Header,
+    Pint3
 } from "@manamerge/mana-atomic-ui";
-import "./TheTeamPage.css";
 // Assets breaker tape and cards
-import { ReactComponent as Sample } from "./assets/sample.svg";
+import { ReactComponent as Star } from "./assets/Star.svg";
 import ProfessionalExperiences from "./components/ProfessionalExperiences";
 import SimpleMapPin from "../../pages/LetsTalkPage/SimpleMap/SimpleMapPin";
+import { useNavigate } from "react-router-dom";
 
 export default function TheTeamPage() {
+    const navigate = useNavigate();
+
     return (
         <div style={{ background: "#121212" }}>
             <Header
@@ -78,7 +81,7 @@ export default function TheTeamPage() {
                             "Feedback",
                             "Learning"
                         ]}
-                        svg={Sample}
+                        svg={Star}
                     />
                 </div>
             </div>
@@ -92,42 +95,87 @@ export default function TheTeamPage() {
                     justifyContent: "center"
                 }}
             >
-                <CardSimpleRender>
-                    <div
-                        style={{
-                            justifySelf: "center",
-                            width: "100%"
-                        }}
-                    >
-                        <SimpleMapPin
-                            lat={45.811}
-                            lng={15.98}
-                            zoom={15}
-                            height="300px"
-                        />
-                    </div>
-                </CardSimpleRender>
-                <CardSimpleRender
-                    icon={Sample}
-                    title="Sports & Well-being"
-                    description="Physical activity as a way to maintain focus, discipline and long-term consistency."
-                >
-                    <div style={{ alignSelf: "center" }}>whatever children</div>
-                </CardSimpleRender>
-                <CardSimpleRender
-                    icon={Sample}
-                    title="Travel & Cultures"
-                    description="International experiences that foster adaptability, communication skills and global mindset."
-                >
-                    <div style={{ alignSelf: "center" }}>whatever children</div>
-                </CardSimpleRender>
-                <CardSimpleRender
-                    icon={Sample}
-                    title="Learning & Curiosity"
-                    description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
-                >
-                    <div style={{ alignSelf: "center" }}>whatever children</div>
-                </CardSimpleRender>
+                <Pint3
+                    cards={[
+                        <CardSimpleRender
+                            key={crypto.getRandomValues(new Uint32Array(1))[0]}
+                        >
+                            <div
+                                style={{
+                                    justifySelf: "center",
+                                    width: "100%"
+                                }}
+                            >
+                                <SimpleMapPin
+                                    lat={45.811}
+                                    lng={15.98}
+                                    zoom={15}
+                                    height="300px"
+                                />
+                            </div>
+                        </CardSimpleRender>,
+                        <CardSimpleRender
+                            key={crypto.getRandomValues(new Uint32Array(1))[0]}
+                            icon={Star}
+                            title="Sports & Well-being"
+                            description="Physical activity as a way to maintain focus, discipline and long-term consistency."
+                        >
+                            <div style={{ alignSelf: "center" }}>
+                                whatever children
+                            </div>
+                        </CardSimpleRender>,
+                        <CardSimpleRender
+                            key={crypto.getRandomValues(new Uint32Array(1))[0]}
+                            icon={Star}
+                            title="Travel & Cultures"
+                            description="International experiences that foster adaptability, communication skills and global mindset."
+                        >
+                            <div style={{ alignSelf: "center" }}>
+                                whatever children
+                            </div>
+                        </CardSimpleRender>,
+                        <CardSimpleRender
+                            key={crypto.getRandomValues(new Uint32Array(1))[0]}
+                            icon={Star}
+                            title="Learning & Curiosity"
+                            description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
+                        >
+                            <div style={{ alignSelf: "center" }}>
+                                whatever children
+                            </div>
+                        </CardSimpleRender>,
+                        <CardSimpleRender
+                            key={crypto.getRandomValues(new Uint32Array(1))[0]}
+                            icon={Star}
+                            title="Learning & Curiosity"
+                            description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
+                        >
+                            <div style={{ alignSelf: "center" }}>
+                                whatever children
+                            </div>
+                        </CardSimpleRender>,
+                        <CardSimpleRender
+                            key={crypto.getRandomValues(new Uint32Array(1))[0]}
+                            icon={Star}
+                            title="Learning & Curiosity"
+                            description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
+                        >
+                            <div style={{ alignSelf: "center" }}>
+                                whatever children
+                            </div>
+                        </CardSimpleRender>,
+                        <CardSimpleRender
+                            key={crypto.getRandomValues(new Uint32Array(1))[0]}
+                            icon={Star}
+                            title="Learning & Curiosity"
+                            description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
+                        >
+                            <div style={{ alignSelf: "center" }}>
+                                whatever children
+                            </div>
+                        </CardSimpleRender>
+                    ]}
+                ></Pint3>
             </div>
             <div
                 style={{
@@ -142,8 +190,8 @@ export default function TheTeamPage() {
                     title="Let's connect and create something amazing!"
                     description="Reach out to us for collaborations, inquiries, and more."
                     buttonText="Contact us"
-                    buttonClick={() => console.log("Button clicked!")}
-                    icon={Sample}
+                    buttonClick={() => navigate("/LetsTalk")}
+                    icon={Star}
                 />
             </div>
         </div>
