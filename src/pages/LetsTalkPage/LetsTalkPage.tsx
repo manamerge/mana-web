@@ -2,46 +2,69 @@ import React from "react";
 import Contacts from "../../components/Contacts/Contacts";
 import SimpleMapPin from "./SimpleMap/SimpleMapPin";
 import ContactInfoCard from "./SimpleContactInfo/SimpleContactInfoCard";
-import { Heading } from "@manamerge/mana-atomic-ui";
+import { Heading, Header, Gradient } from "@manamerge/mana-atomic-ui";
+import { AnimatedBG } from "./LetsTalkPage.css";
+import office from "./assets/office.jpg";
 export default function LetsTalkPage() {
     return (
-        <div>
+        <AnimatedBG>
+            <Header
+                moleculeVariant="secondary"
+                textTitle={[
+                    "We’re ready when you are.",
+                    "Tell us about your project, your idea, or your challenge. We’re here to listen and help you move forward."
+                ]}
+                headingTitle="Let’s Start a Conversation."
+                withOverlay
+                imageURLBackground={office}
+            />
             <div
                 style={{
                     display: "flex",
+                    flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
                     margin: "40px 0"
                 }}
             >
-                <Heading variant="primary" as="h1">
-                    Contact Us
+                <Gradient variant="primary">
+                    <Heading variant="secondary" asTag="h3">
+                        Let's connect and create something amazing!
+                    </Heading>
+                </Gradient>
+                <Heading variant="primary" asTag="h1">
+                    CONTACT US
                 </Heading>
             </div>
             <Contacts />
             <div
                 style={{
                     display: "flex",
+                    flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    margin: "40px 0"
+                    margin: "40px 0 40px 0",
+                    gap: "5px"
                 }}
             >
-                <Heading variant="primary" as="h1">
+                <Heading variant="primary" asTag="h1">
                     Where are we located?
+                </Heading>
+                <Heading variant="primary" asTag="h5">
+                    AT THE HEART OF CROATIAN'S CAPITAL
                 </Heading>
             </div>
             <div
                 style={{
                     justifySelf: "center",
                     marginBottom: "50px",
-                    width: "100%"
+                    width: "80%"
                 }}
             >
                 <SimpleMapPin
                     lat={45.811}
                     lng={15.98}
-                    zoom={15}
+                    zoom={12}
                     width="auto"
                     height="300px"
                 />
@@ -50,6 +73,6 @@ export default function LetsTalkPage() {
                 address="Škorpikova 34, 10000, Zagreb, Croatia"
                 email="manamerge@gmail.com"
             />
-        </div>
+        </AnimatedBG>
     );
 }
