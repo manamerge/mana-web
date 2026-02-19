@@ -66,7 +66,7 @@ export default function MMPage() {
                     back-end systems.
                 </Text>
 
-                <Heading variant="primary" as="h2">
+                <Heading variant="primary" asTag="h2">
                     Featured Projects
                 </Heading>
                 <Text>Some of our impact throughout the years includes:</Text>

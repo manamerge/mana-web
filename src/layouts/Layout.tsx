@@ -1,7 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Footer, Navigation } from "@manamerge/mana-atomic-ui"; // adapta o path conforme necessário
-
 import { ReactComponent as iconBurger } from "../icons/burger.svg";
 import { ReactComponent as Sample } from "./assets/sample.svg";
 
@@ -10,7 +9,7 @@ const MainLayout = () => {
         <>
             <Navigation
                 iconBurger={iconBurger}
-                onTabClick={() => {}}
+                logo={Sample}
                 tabs={[
                     {
                         label: "MM",

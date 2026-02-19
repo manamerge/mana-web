@@ -26,7 +26,6 @@ function LetsTalkPage() {
 
             <Navigation
                 iconBurger={iconBurger}
-                onTabClick={() => {}}
                 tabs={[
                     {
                         label: "Home",
@@ -96,12 +95,12 @@ function LetsTalkPage() {
                 <Icon variant="small" svg={logo} />
                 <Icon variant="medium" svg={logo} />
                 <Icon variant="large" svg={logo} />
-                <Heading as="h1">H1 in the ZONE!</Heading>
-                <Heading as="h2">H2 in the ZONE!</Heading>
-                <Heading as="h3">H3 in the ZONE!</Heading>
-                <Heading as="h4">H4 in the ZONE!</Heading>
-                <Heading as="h5">H5 in the ZONE!</Heading>
-                <Heading as="h6">H6 in the ZONE!</Heading>
+                <Heading asTag="h1">H1 in the ZONE!</Heading>
+                <Heading asTag="h2">H2 in the ZONE!</Heading>
+                <Heading asTag="h3">H3 in the ZONE!</Heading>
+                <Heading asTag="h4">H4 in the ZONE!</Heading>
+                <Heading asTag="h5">H5 in the ZONE!</Heading>
+                <Heading asTag="h6">H6 in the ZONE!</Heading>
 
                 <Link href="https://www.google.com" variant="light">
                     Link here!
