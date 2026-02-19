@@ -34,7 +34,7 @@ export default function WhyUsPage() {
                     "Our interest goes to all developing environments"
                 ]}
             />
-            <Heading variant="primary" as="h1">
+            <Heading variant="primary" asTag="h1">
                 Why Us
             </Heading>
             <Text>

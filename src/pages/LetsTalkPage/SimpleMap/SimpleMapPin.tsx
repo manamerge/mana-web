@@ -49,7 +49,7 @@ export default function SimpleMapPin({
 }
 
 const MapWrapper = styled.div`
-    width: 100%;
+    width: 80%;
     /* height: 400px; */
     border-radius: 23px;
     overflow: hidden;

@@ -22,7 +22,7 @@ export const StyledInput = styled.input`
     padding: 12px 16px;
     border-radius: 8px;
     border: 1px solid #151515;
-    background-color: #00000040;
+    background-color: #ffffff24;
     color: #fff;
     font-size: 14px;
     outline: none;
@@ -42,7 +42,7 @@ export const StyledTextarea = styled.textarea`
     padding: 12px 16px;
     border-radius: 8px;
     border: 1px solid #151515;
-    background-color: #00000040;
+    background-color: #ffffff24;
     color: #fff;
     font-size: 14px;
     resize: none;

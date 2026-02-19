@@ -2,7 +2,6 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { Footer, Navigation } from "@manamerge/mana-atomic-ui"; // adapta o path conforme necessário
-
 import { ReactComponent as iconBurger } from "../icons/burger.svg";
 import { ReactComponent as Sample } from "./assets/sample.svg";
 import { ReactComponent as logo } from "../icons/iconTop.svg";
@@ -16,7 +15,7 @@ const MainLayout = () => {
                 logo={logo}
                 onLogoClick={() => navigate("/")}
                 iconBurger={iconBurger}
-                onTabClick={() => {}}
+                logo={Sample}
                 tabs={[
                     {
                         label: "MM",
