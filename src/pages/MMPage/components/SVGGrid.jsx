@@ -1,0 +1,58 @@
+import React from "react";
+
+export default function SVGGrid({ svgs = [] }) {
+    const totalSlots = 28;
+
+    const items = Array.from({ length: totalSlots }, (_, i) => svgs[i] || null);
+
+    return (
+        <div style={styles.wrapper}>
+            <div style={styles.grid}>
+                {items.map((svg, index) => (
+                    <div key={index} style={styles.cell}>
+                        {svg ? (
+                            <div style={styles.svgContainer}>{svg}</div>
+                        ) : (
+                            <span style={styles.placeholder}>Empty</span>
+                        )}
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+const styles = {
+    wrapper: {
+        width: "100%",
+        display: "flex",
+        justifyContent: "center"
+    },
+    grid: {
+        display: "grid",
+        gridTemplateColumns: "repeat(4, 1fr)", // 4 columns
+        gap: "15px"
+    }
+    // cell: {
+    //     width: "56px",
+    //     height: "56px",
+    //     display: "flex",
+    //     alignItems: "center",
+    //     justifyContent: "center",
+    //     border: "1px solid #e5e7eb",
+    //     borderRadius: "12px",
+    //     boxShadow: "0 1px 2px rgba(0,0,0,0.05)",
+    //     backgroundColor: "#ffffff30"
+    // },
+    // svgContainer: {
+    //     width: "48px",
+    //     height: "48px",
+    //     display: "flex",
+    //     alignItems: "center",
+    //     justifyContent: "center"
+    // },
+    // placeholder: {
+    //     fontSize: "12px",
+    //     color: "#9ca3af"
+    // }
+};
