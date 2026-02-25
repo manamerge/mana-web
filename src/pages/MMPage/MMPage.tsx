@@ -70,7 +70,7 @@ import {
     Gradient,
     Icon
 } from "@manamerge/mana-atomic-ui";
-import SVGGrid from "./components/SVGGrid";
+import SVGGrid from "../../components/SVGGrid";
 
 export default function MMPage() {
     const navigate = useNavigate();
@@ -118,8 +118,7 @@ export default function MMPage() {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    gap: "20px",
-                    textAlign: "center"
+                    gap: "20px"
                 }}
             >
                 <div style={{ marginTop: "100px" }}>
@@ -141,19 +140,27 @@ export default function MMPage() {
                     />
                 </div>
 
-                <Gradient variant="primary">
-                    <Heading variant="secondary" asTag="h3">
-                        Featured Projects
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        textAlign: "center"
+                    }}
+                >
+                    <Gradient variant="primary">
+                        <Heading variant="secondary" asTag="h3">
+                            Featured Projects
+                        </Heading>
+                    </Gradient>
+
+                    <Heading variant="primary" asTag="h1">
+                        Across Industries & Technologies
                     </Heading>
-                </Gradient>
-
-                <Heading variant="primary" asTag="h1">
-                    Across Industries & Technologies
-                </Heading>
-                <Text variant="primary-bold">
-                    The impact of our work throughout the years
-                </Text>
-
+                    <Text variant="primary-bold">
+                        The impact of our work throughout the years
+                    </Text>
+                </div>
                 <CardTeaser
                     separator
                     moleculeVariant="primary"
@@ -297,6 +304,7 @@ export default function MMPage() {
 
                 <div style={{ margin: "80px 40px 40px 40px" }}>
                     <Pint3
+                        // minHeight="400px"
                         cards={[
                             <div
                                 style={{
@@ -338,7 +346,7 @@ export default function MMPage() {
                                 onClick={() => navigate("/theteam")}
                                 gradientPosition="top"
                                 title="Who are we?"
-                                description="An engineering team with international experience, working with companies ranging from innovative startups to global enterprises. We have a proven track record of delivering high-quality software solutions over various industries, including finance, healthcare, aviation, blockchain, e-commerce, and digital events.
+                                description="An engineering team with international experience, working with companies ranging from innovative startups to global enterprises with a track record of delivering high-quality software solutions.
 "
                             >
                                 <div
@@ -374,7 +382,7 @@ export default function MMPage() {
                                 key={4}
                                 gradientPosition="right"
                                 title="From Wireframe to Code"
-                                description="We turn your designs into pixel-perfect, responsive, and performant web applications using the latest frontend technologies and best practices."
+                                description="We turn your designs into pixel-perfect, responsive applications using the latest technologies and best practices."
                             ></CardSimpleRender>,
                             <CardSimpleRender
                                 key={7}
@@ -415,7 +423,7 @@ export default function MMPage() {
                                 <div
                                     style={{
                                         alignSelf: "center",
-                                        marginBottom: "70px"
+                                        marginBottom: "50px"
                                     }}
                                 >
                                     <Icon variant="xxxl" svg={StorybookSVG} />
