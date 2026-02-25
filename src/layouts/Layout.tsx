@@ -1,15 +1,20 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { useNavigate, ScrollRestoration } from "react-router-dom";
 import { Footer, Navigation } from "@manamerge/mana-atomic-ui"; // adapta o path conforme necessário
 import { ReactComponent as iconBurger } from "../icons/burger.svg";
 import { ReactComponent as Sample } from "./assets/sample.svg";
+import { ReactComponent as MM } from "./assets/mm.svg";
 
 const MainLayout = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <Navigation
+                onLogoClick={() => navigate("/")}
                 iconBurger={iconBurger}
-                logo={Sample}
+                logo={MM}
                 tabs={[
                     {
                         label: "MM",
@@ -29,6 +34,7 @@ const MainLayout = () => {
                     }
                 ]}
             />
+            <ScrollRestoration />
             <main>
                 <Outlet />
             </main>
@@ -62,7 +68,7 @@ const MainLayout = () => {
                     }
                 ]}
             >
-                Copyright © 2025. ManaMerge. All rights reserved
+                Copyright © 2026 | ManaMerge | All rights reserved
             </Footer>
         </>
     );
