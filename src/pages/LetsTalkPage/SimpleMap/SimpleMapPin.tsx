@@ -50,8 +50,7 @@ export default function SimpleMapPin({
 
 const MapWrapper = styled.div`
     width: 80%;
-    /* height: 400px; */
-    border-radius: 23px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 `;

@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { CardSimpleRender } from "@manamerge/mana-atomic-ui/dist";
 
 const float = keyframes`
   0%   { transform: translate(0px, 0px); }
@@ -48,4 +49,59 @@ export const BottomCurve = styled.div`
     border-radius: 50%;
     height: 2250px;
     background-color: #000b07;
+`;
+
+export const AlteredCardSimpleRender = styled(CardSimpleRender)`
+    .bla {
+        background-color: #f00;
+    }
+`;
+export const CardSimpleRenderWrapper = styled.div`
+    width: 100%;
+    .CardSimpleRender-primary {
+        background: radial-gradient(
+            circle at bottom right,
+            rgb(0, 77, 85),
+            rgba(114, 255, 101, 1)
+        );
+    }
+    svg {
+        z-index: 0;
+    }
+    h3 {
+        color: black;
+    }
+    div {
+        z-index: 1;
+    }
+    p {
+        color: black;
+    }
+`;
+
+export const Avatar = styled.img<{ height: string; width: string }>`
+    width: width;
+    height: height;
+    border-radius: 50%;
+`;
+
+export const WrapperLineTop = styled.div<{
+    rotation: string;
+    bottom: string;
+    right: string;
+    left?: string;
+    width?: string;
+}>`
+    position: absolute;
+    bottom: ${({ bottom }) => bottom};
+    right: ${({ right }) => right};
+    left: ${({ left }) => left || "auto"};
+    width: ${({ width }) => width || "auto"};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(${({ rotation }) => rotation}deg);
+    border-radius: 45px;
+    padding: 10px 10px;
+    background: radial-gradient(circle at top right, #c6fba6d0 20%, #66efd8c5);
 `;

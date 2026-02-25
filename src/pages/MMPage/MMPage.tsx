@@ -70,6 +70,9 @@ import {
     Gradient,
     Icon
 } from "@manamerge/mana-atomic-ui";
+
+// Assets
+import { ReactComponent as NoisePattern } from "./assets/noisePattern.svg";
 import SVGGrid from "../../components/SVGGrid";
 
 export default function MMPage() {
@@ -162,12 +165,13 @@ export default function MMPage() {
                     </Text>
                 </div>
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
+                    onClick={() => goToSite("https://dexper.io/")}
                     separator
                     moleculeVariant="primary"
                     company="DEXPER"
                     year="2024"
                     title="Frontend Engineer Event Platform"
-                    onClick={() => console.log("https://dexper.io/")}
                     buttonName="Take me there"
                     svg={RoundArrow}
                     checks={[
@@ -178,6 +182,7 @@ export default function MMPage() {
                     cardImageSrc={dexper}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="giffits"
                     year="2024"
                     title="Marketing Automation"
@@ -193,6 +198,7 @@ export default function MMPage() {
                     separator={true}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     separator
                     moleculeVariant="primary"
                     company="UNISOT"
@@ -209,6 +215,7 @@ export default function MMPage() {
                     cardImageSrc={unisot}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="Euronext"
                     year="2020"
                     title="Company-wide Design System"
@@ -222,6 +229,7 @@ export default function MMPage() {
                     separator={true}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="Airbus"
                     year="2019"
                     title="Final Assembly Line Data Persistence"
@@ -235,6 +243,7 @@ export default function MMPage() {
                     separator={true}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     separator
                     moleculeVariant="primary"
                     company="APDL"
@@ -255,6 +264,7 @@ export default function MMPage() {
                     cardImageSrc={apdl}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     separator
                     moleculeVariant="primary"
                     company="ULSAM"
@@ -275,6 +285,7 @@ export default function MMPage() {
                     cardImageSrc={ulsam}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="SPMS"
                     year="2017"
                     title="Healthcare Metrics Aggregation"
@@ -288,6 +299,7 @@ export default function MMPage() {
                     separator={true}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     moleculeVariant="primary"
                     company="SPARKLEIT"
                     year="2016"

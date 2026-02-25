@@ -4,7 +4,7 @@ import SimpleMapPin from "./SimpleMap/SimpleMapPin";
 import ContactInfoCard from "./SimpleContactInfo/SimpleContactInfoCard";
 import { Heading, Header, Gradient } from "@manamerge/mana-atomic-ui";
 import { AnimatedBG } from "./LetsTalkPage.css";
-import office from "./assets/office.jpg";
+import office from "./assets/office.png";
 export default function LetsTalkPage() {
     return (
         <AnimatedBG>
@@ -12,7 +12,7 @@ export default function LetsTalkPage() {
                 moleculeVariant="secondary"
                 textTitle={[
                     "We’re ready when you are.",
-                    "Tell us about your project, your idea, or your challenge. We’re here to listen and help you move forward."
+                    "Tell us about your project, your idea, or your challenge."
                 ]}
                 headingTitle="Let’s Start a Conversation."
                 withOverlay
