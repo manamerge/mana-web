@@ -118,7 +118,8 @@ export default function MMPage() {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    gap: "20px"
+                    gap: "20px",
+                    textAlign: "center"
                 }}
             >
                 <div style={{ marginTop: "100px" }}>
@@ -145,6 +146,7 @@ export default function MMPage() {
                         Featured Projects
                     </Heading>
                 </Gradient>
+
                 <Heading variant="primary" asTag="h1">
                     Across Industries & Technologies
                 </Heading>
