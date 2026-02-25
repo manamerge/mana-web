@@ -19,6 +19,7 @@ import { ReactComponent as iconDot } from "../../icons/iconDot.svg";
 import { ReactComponent as iconLeft } from "../../icons/iconLeft.svg";
 import { ReactComponent as iconRight } from "../../icons/iconRight.svg";
 import { ReactComponent as Sample } from "./assets/sample.svg";
+import { ReactComponent as NoisePattern } from "./assets/noisePattern.svg";
 import sampleImage from "./assets/sampleImg.png";
 import dexperImage from "./assets/dexper.png";
 
@@ -71,6 +72,7 @@ export default function MMPage() {
                 </Heading>
                 <Text>Some of our impact throughout the years includes:</Text>
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="dexper"
                     year="2025"
                     title="solução/ideia de negócio implementada/alcançada"
@@ -89,6 +91,7 @@ export default function MMPage() {
                     separator={true}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="giffits"
                     year="2024"
                     title="....."
@@ -105,6 +108,7 @@ export default function MMPage() {
                     separator={true}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="unisot"
                     year="2021"
                     title="....."
@@ -117,6 +121,7 @@ export default function MMPage() {
                 />
 
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="Euronext"
                     year="2020"
                     title="....."
@@ -126,6 +131,7 @@ export default function MMPage() {
                     separator={true}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="Airbus"
                     year="2019"
                     title="....."
@@ -135,6 +141,7 @@ export default function MMPage() {
                     separator={true}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="Optimizer"
                     year="2018"
                     title="....."
@@ -144,6 +151,7 @@ export default function MMPage() {
                     separator={true}
                 />
                 <CardTeaser
+                    backgroundSvg={NoisePattern}
                     company="SparkleIt"
                     year="2017"
                     title="....."

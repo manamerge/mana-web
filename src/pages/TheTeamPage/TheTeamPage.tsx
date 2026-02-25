@@ -1,19 +1,34 @@
 import React from "react";
 import {
-    BreakerTape,
     CardSimpleRender,
     CardBanner,
     Header,
     Pint3,
     Heading,
-    Gradient
+    Gradient,
+    Text
 } from "@manamerge/mana-atomic-ui";
-// Assets breaker tape and cards
-import { ReactComponent as Star } from "./assets/Star.svg";
 import ProfessionalExperiences from "./components/ProfessionalExperiences";
 import SimpleMapPin from "../../pages/LetsTalkPage/SimpleMap/SimpleMapPin";
 import { useNavigate } from "react-router-dom";
-import { AnimatedBG, BottomCurve } from "./TheTeamPage.css";
+import {
+    AnimatedBG,
+    BottomCurve,
+    AlteredCardSimpleRender,
+    CardSimpleRenderWrapper,
+    Avatar,
+    WrapperLineTop
+} from "./TheTeamPage.css";
+// Assets
+import DavidAvatar from "./assets/DavidAvatar.png";
+import AlexisAvatar from "./assets/AlexisAvatar.png";
+import Book from "./assets/karama.png";
+import { ReactComponent as NoisePattern } from "./assets/noisePattern.svg";
+import { ReactComponent as Www } from "./assets/g911.svg";
+import { ReactComponent as Hashtag } from "./assets/hashtag.svg";
+import { ReactComponent as Matricula } from "./assets/matricula.svg";
+import { ReactComponent as Star } from "./assets/Star.svg";
+
 export default function TheTeamPage() {
     const navigate = useNavigate();
 
@@ -30,63 +45,6 @@ export default function TheTeamPage() {
                     withOverlay
                     imageURLBackground="https://static.vecteezy.com/system/resources/thumbnails/056/635/668/small_2x/black-office-with-computer-desk-and-plants-photo.jpeg"
                 />
-
-                {/*// ? ASAP WIP - CARD-176 */}
-                {/* <div
-                    style={{
-                        height: "150px",
-                        position: "relative",
-                        overflow: "hidden"
-                    }}
-                >
-                    <div
-                        style={{
-                            height: "40px",
-                            width: "102%",
-                            position: "absolute",
-                            top: "0",
-                            left: "-1%"
-                        }}
-                    >
-                        <BreakerTape
-                            words={[
-                                "Collaboration",
-                                "Engineering",
-                                "Frontend",
-                                "Full-stack",
-                                "Scalability",
-                                "Design System",
-                                "Performance",
-                                "Clean Code",
-                                "Agile",
-                                "Scrum",
-                                "Remote Work",
-                                "Innovation",
-                                "Problem Solving",
-                                "Architecture",
-                                "Ownership",
-                                "Reliability",
-                                "Product Thinking",
-                                "APIs",
-                                "Testing",
-                                "User Experience",
-                                "Accessibility",
-                                "Code Reviews",
-                                "Documentation",
-                                "Teamwork",
-                                "Creativity",
-                                "Leadership",
-                                "Optimization",
-                                "Monitoring",
-                                "Security",
-                                "Automation",
-                                "Feedback",
-                                "Learning"
-                            ]}
-                            svg={Star}
-                        />
-                    </div>
-                </div> */}
                 <div
                     style={{
                         display: "flex",
@@ -130,6 +88,7 @@ export default function TheTeamPage() {
                     }}
                 >
                     <Pint3
+                        minHeight="400px"
                         cards={[
                             <div
                                 style={{
@@ -152,7 +111,25 @@ export default function TheTeamPage() {
                                     Here, know more about us
                                 </Heading>
                             </div>,
-
+                            <div
+                                key={
+                                    crypto.getRandomValues(
+                                        new Uint32Array(1)
+                                    )[0]
+                                }
+                                style={{
+                                    outline: "2px solid #a9e69440",
+                                    width: "100%",
+                                    borderRadius: "20px"
+                                }}
+                            >
+                                <SimpleMapPin
+                                    lat={45.811}
+                                    lng={15.98}
+                                    zoom={15}
+                                    height="100%"
+                                />
+                            </div>,
                             <CardSimpleRender
                                 gradientPosition="top left"
                                 key={
@@ -160,18 +137,95 @@ export default function TheTeamPage() {
                                         new Uint32Array(1)
                                     )[0]
                                 }
+                                icon={Star}
+                                title="Global Perspective"
+                                description="Thinking beyond borders. Collaborating, learning and adapting across cultures and ideas."
                             >
                                 <div
                                     style={{
-                                        justifySelf: "center",
-                                        width: "100%"
+                                        position: "relative",
+                                        zIndex: "-1"
                                     }}
                                 >
-                                    <SimpleMapPin
-                                        lat={45.811}
-                                        lng={15.98}
-                                        zoom={15}
-                                        height="300px"
+                                    <Www
+                                        style={{
+                                            width: "280px",
+                                            height: "285px",
+                                            bottom: "-29px",
+                                            left: "155px",
+                                            position: "absolute",
+                                            filter: "opacity(0.5)"
+                                        }}
+                                    />
+                                </div>
+                            </CardSimpleRender>,
+                            <CardSimpleRenderWrapper
+                                key={
+                                    crypto.getRandomValues(
+                                        new Uint32Array(1)
+                                    )[0]
+                                }
+                            >
+                                <AlteredCardSimpleRender
+                                    gradientPosition="top left"
+                                    backgroundSvg={NoisePattern}
+                                >
+                                    <div
+                                        style={{ padding: "20px 20px 0 20px" }}
+                                    >
+                                        <div
+                                            style={{
+                                                display: "flex",
+                                                alignItems: "center",
+                                                flexWrap: "wrap",
+                                                gap: "0 5px"
+                                            }}
+                                        >
+                                            <Text
+                                                variant="primary-regular"
+                                                vFontSize="md"
+                                            >
+                                                The team that
+                                            </Text>
+                                            <Text variant="primary-bold">
+                                                got your back 🤩 🚀
+                                            </Text>
+                                        </div>
+                                        <Avatar
+                                            src={DavidAvatar}
+                                            alt={`Colaborador 1`}
+                                            key="1"
+                                            height="50px"
+                                            width="37px"
+                                        />
+                                        <Avatar
+                                            src={AlexisAvatar}
+                                            alt={`Colaborador 2`}
+                                            key="2"
+                                            height="50px"
+                                            width="45px"
+                                        />
+                                    </div>
+                                </AlteredCardSimpleRender>
+                            </CardSimpleRenderWrapper>,
+                            <CardSimpleRender
+                                gradientPosition="top left"
+                                key={
+                                    crypto.getRandomValues(
+                                        new Uint32Array(1)
+                                    )[0]
+                                }
+                                icon={Star}
+                                title="Currently reading"
+                                description="Classical literature"
+                            >
+                                <div style={{ alignSelf: "center" }}>
+                                    <img
+                                        src={Book}
+                                        alt="karamazov"
+                                        style={{
+                                            width: "180px"
+                                        }}
                                     />
                                 </div>
                             </CardSimpleRender>,
@@ -182,12 +236,19 @@ export default function TheTeamPage() {
                                         new Uint32Array(1)
                                     )[0]
                                 }
-                                icon={Star}
-                                title="Sports & Well-being"
-                                description="Physical activity as a way to maintain focus, discipline and long-term consistency."
+                                icon={Hashtag}
+                                title="together"
                             >
-                                <div style={{ alignSelf: "center" }}>
-                                    whatever children
+                                <div
+                                    style={{
+                                        zIndex: "-1",
+                                        display: "flex",
+                                        alignSelf: "center",
+                                        justifyContent: "center",
+                                        marginBottom: "20px"
+                                    }}
+                                >
+                                    <Matricula filter="brightness(.8)" />
                                 </div>
                             </CardSimpleRender>,
                             <CardSimpleRender
@@ -198,56 +259,97 @@ export default function TheTeamPage() {
                                     )[0]
                                 }
                                 icon={Star}
-                                title="Travel & Cultures"
-                                description="International experiences that foster adaptability, communication skills and global mindset."
+                                title="Our persona"
+                                // description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
                             >
-                                <div style={{ alignSelf: "center" }}>
-                                    whatever children
-                                </div>
-                            </CardSimpleRender>,
-                            <CardSimpleRender
-                                gradientPosition="top left"
-                                key={
-                                    crypto.getRandomValues(
-                                        new Uint32Array(1)
-                                    )[0]
-                                }
-                                icon={Star}
-                                title="Learning & Curiosity"
-                                description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
-                            >
-                                <div style={{ alignSelf: "center" }}>
-                                    whatever children
-                                </div>
-                            </CardSimpleRender>,
-                            <CardSimpleRender
-                                gradientPosition="top left"
-                                key={
-                                    crypto.getRandomValues(
-                                        new Uint32Array(1)
-                                    )[0]
-                                }
-                                icon={Star}
-                                title="Learning & Curiosity"
-                                description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
-                            >
-                                <div style={{ alignSelf: "center" }}>
-                                    whatever children
-                                </div>
-                            </CardSimpleRender>,
-                            <CardSimpleRender
-                                gradientPosition="top left"
-                                key={
-                                    crypto.getRandomValues(
-                                        new Uint32Array(1)
-                                    )[0]
-                                }
-                                icon={Star}
-                                title="Learning & Curiosity"
-                                description="Constant pursuit of knowledge, from technical deep-dives to product strategy and emerging technologies."
-                            >
-                                <div style={{ alignSelf: "center" }}>
-                                    whatever children
+                                <div
+                                    style={{
+                                        position: "relative",
+                                        overflow: "hidden",
+                                        whiteSpace: "nowrap",
+                                        width: "100%",
+                                        height: "100%"
+                                    }}
+                                >
+                                    <WrapperLineTop
+                                        rotation="-20"
+                                        bottom="65%"
+                                        right="60%"
+                                    >
+                                        <Text
+                                            variant="primary-regular"
+                                            vColor="#101010"
+                                        >
+                                            Board-gamers ♟️
+                                        </Text>
+                                    </WrapperLineTop>
+                                    <WrapperLineTop
+                                        rotation="20"
+                                        bottom="62%"
+                                        right="10px"
+                                        width="170px"
+                                        left="50%"
+                                    >
+                                        <Text
+                                            variant="primary-regular"
+                                            vColor="#101010"
+                                        >
+                                            Cliff-jump-seekers 🏖️
+                                        </Text>
+                                    </WrapperLineTop>
+                                    <WrapperLineTop
+                                        rotation="-5"
+                                        bottom="12%"
+                                        right="7%"
+                                        // bottom="60%"
+                                        width="170px"
+                                        // left="50%"
+                                    >
+                                        <Text
+                                            variant="primary-regular"
+                                            vColor="#101010"
+                                        >
+                                            Cultural-travelers ✈️
+                                        </Text>
+                                    </WrapperLineTop>
+                                    <WrapperLineTop
+                                        rotation="10"
+                                        bottom="31%"
+                                        right="-10%"
+                                        width="150px"
+                                        left="50%"
+                                    >
+                                        <Text
+                                            variant="primary-regular"
+                                            vColor="#101010"
+                                        >
+                                            Caffeine-peers ☕
+                                        </Text>
+                                    </WrapperLineTop>
+                                    <WrapperLineTop
+                                        rotation="-7"
+                                        bottom="45%"
+                                        right="40%"
+                                    >
+                                        <Text
+                                            variant="primary-regular"
+                                            vColor="#101010"
+                                        >
+                                            Tennis-players 🎾
+                                        </Text>
+                                    </WrapperLineTop>
+                                    <WrapperLineTop
+                                        rotation="15"
+                                        bottom="10%"
+                                        right="36%"
+                                    >
+                                        <Text
+                                            variant="primary-regular"
+                                            vColor="#101010"
+                                        >
+                                            Cryptography-enthusiasts 🔐
+                                        </Text>
+                                    </WrapperLineTop>
                                 </div>
                             </CardSimpleRender>,
                             <CardSimpleRender

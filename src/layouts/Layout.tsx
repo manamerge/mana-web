@@ -62,7 +62,7 @@ const MainLayout = () => {
                     }
                 ]}
             >
-                Copyright © 2025. ManaMerge. All rights reserved
+                Copyright © 2026. ManaMerge. All rights reserved
             </Footer>
         </>
     );
