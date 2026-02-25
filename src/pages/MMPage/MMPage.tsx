@@ -338,8 +338,7 @@ export default function MMPage() {
                                 onClick={() => navigate("/theteam")}
                                 gradientPosition="top"
                                 title="Who are we?"
-                                description="An engineering team with international experience across Europe, working
-with companies ranging from innovative startups to global enterprises. We have a proven track record of delivering high-quality software solutions across various industries, including finance, healthcare, aviation, blockchain, e-commerce, and digital events.
+                                description="An engineering team with international experience, working with companies ranging from innovative startups to global enterprises. We have a proven track record of delivering high-quality software solutions over various industries, including finance, healthcare, aviation, blockchain, e-commerce, and digital events.
 "
                             >
                                 <div
@@ -389,7 +388,7 @@ with companies ranging from innovative startups to global enterprises. We have a
                                 key={6}
                                 gradientPosition="bottom"
                                 title="Mobile + Tablet + Web"
-                                description="We build responsive web and mobile applications that work seamlessly across all devices."
+                                description="We build responsive web and mobile applications that work seamlessly on all devices."
                             >
                                 <div style={{ alignSelf: "center" }}>
                                     <img
