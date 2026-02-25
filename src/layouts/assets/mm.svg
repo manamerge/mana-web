@@ -1,0 +1,23 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#8CC63F;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00AEEF;stop-opacity:1" />
+        </linearGradient>
+
+        <linearGradient id="innerShadow" x1="100%" y1="0%" x2="80%" y2="20%">
+            <stop offset="0%" style="stop-color:#000;stop-opacity:0.2" />
+            <stop offset="100%" style="stop-color:#000;stop-opacity:0" />
+        </linearGradient>
+    </defs>
+
+    <!-- <rect width="500" height="500" fill="#1A1A1A" /> -->
+
+    <path d="M250 50 L423.2 150 V350 L250 450 L76.8 350 V150 Z" fill="url(#hexGradient)" />
+
+    <path d="M250 50 L423.2 150 V350 L250 450 L250 250 Z" fill="url(#innerShadow)" />
+
+    <path
+        d="M250 110 L370 180 V310 L330 335 V215 L275 185 V360 L225 360 V185 L170 215 V335 L130 310 V180 Z"
+        fill="white" />
+</svg>

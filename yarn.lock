@@ -1660,7 +1660,7 @@
 
 "@manamerge/mana-atomic-ui@1.0.220":
   version "1.0.220"
-  resolved "https://registry.npmjs.org/@manamerge/mana-atomic-ui/-/mana-atomic-ui-1.0.220.tgz#08804463cd6e10bb69e8256d5833837f78bbb333"
+  resolved "https://registry.yarnpkg.com/@manamerge/mana-atomic-ui/-/mana-atomic-ui-1.0.220.tgz#08804463cd6e10bb69e8256d5833837f78bbb333"
   integrity sha512-Nm3OtjBHRN94z+bDV4TRORq3NciMotdGDpC/OF8xcmWcL0O2uFXpTzrK4KEizu9cfEihYIq6l+PBARh6qzuAIw==
   dependencies:
     "@storybook/addon-themes" "^8.4.5"
