@@ -304,7 +304,6 @@ export default function MMPage() {
 
                 <div style={{ margin: "80px 40px 40px 40px" }}>
                     <Pint3
-                        // minHeight="400px"
                         cards={[
                             <div
                                 style={{
