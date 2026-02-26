@@ -93,8 +93,8 @@ export default function WhyUsPage() {
                     moleculeVariant="secondary"
                     headingTitle="What Defines Our Team?"
                     textTitle={[
-                        "The skills that took us to the next level",
-                        "From clean code to scalable architecture"
+                        "The skills that took us to the next level.",
+                        "From clean code to scalable architecture."
                     ]}
                 />
             </WrapperHeader>
