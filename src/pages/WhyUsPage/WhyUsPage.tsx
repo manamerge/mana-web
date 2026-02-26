@@ -8,11 +8,15 @@ import {
     Gradient,
     Icon
 } from "@manamerge/mana-atomic-ui";
-import { StyledCardTeaser } from "./WhyUsPage.css";
+import {
+    StyledCardTeaser,
+    WrapperHeader,
+    SolidObjectComponent,
+    NoisePatternComponent
+} from "./WhyUsPage.css";
 
 // assets
 import { ReactComponent as Sample } from "./assets/sample.svg";
-import Blue from "./assets/Blue.png";
 import Dialog from "./assets/Dialog.png";
 import Documentation from "./assets/Documentation.png";
 import InformationData from "./assets/InformationData.png";
@@ -22,6 +26,8 @@ import Settings from "./assets/Settings.png";
 import Tools from "./assets/Tools.png";
 import Search from "./assets/Search.png";
 import Layered from "./assets/Layered.png";
+import { ReactComponent as SolidObject } from "./assets/SolidObject-3.svg";
+import { ReactComponent as NoisePattern } from "./assets/noisePattern.svg";
 
 //logos
 import { ReactComponent as AWS } from "../../icons/logos/AWS.svg";
@@ -70,19 +76,28 @@ export default function WhyUsPage() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                gap: "20px"
+                gap: "20px",
+                position: "relative",
+                zIndex: "0"
             }}
         >
-            <Header
-                moleculeVariant="secondary"
-                headingTitle="What Defines Our Team?"
-                imageURLBackground={Blue}
-                withOverlay
-                textTitle={[
-                    "The skills that took us to the next level",
-                    "From clean code to scalable architecture"
-                ]}
-            />
+            <WrapperHeader>
+                <NoisePatternComponent
+                    as={NoisePattern}
+                ></NoisePatternComponent>
+                <SolidObjectComponent
+                    className="WTF"
+                    as={SolidObject}
+                ></SolidObjectComponent>
+                <Header
+                    moleculeVariant="secondary"
+                    headingTitle="What Defines Our Team?"
+                    textTitle={[
+                        "The skills that took us to the next level",
+                        "From clean code to scalable architecture"
+                    ]}
+                />
+            </WrapperHeader>
 
             <div
                 style={{

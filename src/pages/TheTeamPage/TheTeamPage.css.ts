@@ -105,3 +105,34 @@ export const WrapperLineTop = styled.div<{
     padding: 10px 10px;
     background: radial-gradient(circle at top right, #c6fba6d0 20%, #66efd8c5);
 `;
+
+export const NoisePatternComponent = styled.svg`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+`;
+export const SolidObject = styled.svg`
+    height: 100%;
+    padding-left: 25%;
+    filter: opacity(0.5);
+`;
+
+export const WrapperHeader = styled.div`
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #3beb00 0%, #14160180 100%);
+    &::after {
+        content: "";
+        position: absolute;
+        background: linear-gradient(180deg, transparent 0%, #01160e 100%);
+        bottom: 0px;
+        height: 575px;
+        width: 100%;
+    }
+    .Header-secondary {
+        top: -405px;
+        z-index: 1;
+    }
+`;
