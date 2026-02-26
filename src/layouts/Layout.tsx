@@ -43,28 +43,28 @@ const MainLayout = () => {
                 routes={[
                     {
                         order: 1,
-                        type: "external",
-                        url: "https://google.com",
+                        type: "internal",
+                        slug: "/",
                         label: "Home"
                     },
                     {
                         order: 2,
-                        type: "external",
-                        url: "https://google.com",
-                        label: "About",
+                        type: "internal",
+                        slug: "/TheTeam",
+                        label: "The Team",
                         blank: true
                     },
                     {
                         order: 3,
                         type: "internal",
-                        slug: "/service",
-                        label: "Service"
+                        slug: "/WhyUs",
+                        label: "Why Us"
                     },
                     {
                         order: 4,
                         type: "internal",
-                        slug: "/contact",
-                        label: "Contact us"
+                        slug: "/LetsTalk",
+                        label: "Lets Talk"
                     }
                 ]}
             >
