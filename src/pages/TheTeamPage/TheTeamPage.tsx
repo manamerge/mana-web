@@ -28,6 +28,7 @@ import { ReactComponent as Www } from "./assets/g911.svg";
 import { ReactComponent as Hashtag } from "./assets/hashtag.svg";
 import { ReactComponent as Matricula } from "./assets/matricula.svg";
 import { ReactComponent as Star } from "./assets/Star.svg";
+import { ReactComponent as Sample } from "./assets/sample.svg";
 
 export default function TheTeamPage() {
     const navigate = useNavigate();
@@ -385,7 +386,7 @@ export default function TheTeamPage() {
                         description="Reach out to us for collaborations, inquiries, and more."
                         buttonText="Contact us"
                         buttonClick={() => navigate("/LetsTalk")}
-                        icon={Star}
+                        icon={Sample}
                     />
                 </div>
             </AnimatedBG>

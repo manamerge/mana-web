@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SVGGrid({ columns = 4, svgs = [] }) {
+export default function SVGGrid({ columns = 4, svgs = [], gap = "15px" }) {
     const totalSlots = 28;
 
     const items = Array.from({ length: totalSlots }, (_, i) => svgs[i] || null);
@@ -13,7 +13,7 @@ export default function SVGGrid({ columns = 4, svgs = [] }) {
         grid: {
             display: "grid",
             gridTemplateColumns: `repeat(${columns}, 1fr)`, // Dynamic columns
-            gap: "15px"
+            gap: gap
         }
         // cell: {
         //     width: "56px",
@@ -44,11 +44,7 @@ export default function SVGGrid({ columns = 4, svgs = [] }) {
             <div style={styles.grid}>
                 {items.map((svg, index) => (
                     <div key={index} style={styles.cell}>
-                        {svg ? (
-                            <div style={styles.svgContainer}>{svg}</div>
-                        ) : (
-                            <span style={styles.placeholder}>Empty</span>
-                        )}
+                        {svg && <div style={styles.svgContainer}>{svg}</div>}
                     </div>
                 ))}
             </div>
