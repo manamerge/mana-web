@@ -1,5 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import {
+    WrapperHeader,
+    NoisePatternComponent,
+    SolidObjectComponent
+} from "./MMPage.css";
 
 // Images
 import ulsam from "./assets/ulsam-1.png";
@@ -73,6 +78,7 @@ import {
 
 // Assets
 import { ReactComponent as NoisePattern } from "./assets/noisePattern.svg";
+import { ReactComponent as SolidObject } from "./assets/SolidObject.svg";
 import SVGGrid from "../../components/SVGGrid";
 
 export default function MMPage() {
@@ -124,24 +130,23 @@ export default function MMPage() {
                     gap: "20px"
                 }}
             >
-                <div style={{ marginTop: "100px" }}>
+                <WrapperHeader>
+                    <NoisePatternComponent
+                        as={NoisePattern}
+                    ></NoisePatternComponent>
+                    <SolidObjectComponent
+                        as={SolidObject}
+                    ></SolidObjectComponent>
+
                     <Header
-                        buttonLeftClick={() => {}}
-                        buttonLeftText="Let's talk"
                         buttonRightClick={() => {}}
                         buttonRightText="Contact us"
-                        headingTitle="Welcome to ManaMerge"
+                        headingTitle="We are not your ordinary software team."
                         iconDot={iconDot}
-                        buttonLeftIcon={iconLeft}
                         buttonRightIcon={iconRight}
-                        iconTop={iconTop}
-                        textBanner="available"
-                        textTitle={[
-                            "We are a team of Software Engineers",
-                            "Our interest goes to all developing environments"
-                        ]}
+                        textTitle={["We're ManaMerge!"]}
                     />
-                </div>
+                </WrapperHeader>
 
                 <div
                     style={{

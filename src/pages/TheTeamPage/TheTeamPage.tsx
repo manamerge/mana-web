@@ -17,7 +17,10 @@ import {
     AlteredCardSimpleRender,
     CardSimpleRenderWrapper,
     Avatar,
-    WrapperLineTop
+    WrapperLineTop,
+    WrapperHeader,
+    NoisePatternComponent,
+    SolidObject
 } from "./TheTeamPage.css";
 // Assets
 import DavidAvatar from "./assets/DavidAvatar.png";
@@ -29,6 +32,7 @@ import { ReactComponent as Hashtag } from "./assets/hashtag.svg";
 import { ReactComponent as Matricula } from "./assets/matricula.svg";
 import { ReactComponent as Star } from "./assets/Star.svg";
 import { ReactComponent as Sample } from "./assets/sample.svg";
+import { ReactComponent as SolidObject2 } from "./assets/SolidObject-2.svg";
 
 export default function TheTeamPage() {
     const navigate = useNavigate();
@@ -36,16 +40,20 @@ export default function TheTeamPage() {
     return (
         <div>
             <AnimatedBG>
-                <Header
-                    moleculeVariant="secondary"
-                    textTitle={[
-                        "Two engineers. One shared vision.",
-                        "We design, build and scale digital products with purpose."
-                    ]}
-                    headingTitle="Meet The Team"
-                    withOverlay
-                    imageURLBackground="https://static.vecteezy.com/system/resources/thumbnails/056/635/668/small_2x/black-office-with-computer-desk-and-plants-photo.jpeg"
-                />
+                <WrapperHeader>
+                    <NoisePatternComponent
+                        as={NoisePattern}
+                    ></NoisePatternComponent>
+                    <SolidObject as={SolidObject2}></SolidObject>
+                    <Header
+                        moleculeVariant="secondary"
+                        textTitle={[
+                            "Two engineers. One shared vision.",
+                            "We design, build and scale digital products with purpose."
+                        ]}
+                        headingTitle="Meet The Team"
+                    />
+                </WrapperHeader>
                 <div
                     style={{
                         display: "flex",

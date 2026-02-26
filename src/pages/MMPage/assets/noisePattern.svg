@@ -6,7 +6,7 @@
             <!-- High frequency for tiny pixel variation -->
             <feTurbulence
                 type="fractalNoise"
-                baseFrequency="0.8" />
+                baseFrequency="1" />
             <feColorMatrix
                 in="noise"
                 type="matrix"
@@ -20,4 +20,5 @@
     </defs>
     <!-- Pixel field -->
     <rect width="100%" height="100%" filter="url(#greenNoise)" />
+
 </svg>

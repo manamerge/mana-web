@@ -4,7 +4,7 @@
         "empresa": "Sparkle It",
         "datas": "",
         "localizacao": "Viana do Castelo, Portugal",
-        "descricao": "Desenvolvimento full-stack de produtos digitais, incluindo redes sociais e aplicações móveis com geolocalização. Forte foco em transformar requisitos de negócio em soluções técnicas funcionais.",
+        "descricao": "Full-stack development of digital products, including social networks and mobile applications with geolocation. Strong focus on transforming business requirements into functional technical solutions.",
         "colaboradores": [
             "https://i.pravatar.cc/100?img=1",
             "https://i.pravatar.cc/100?img=2",
@@ -16,14 +16,14 @@
         "empresa": "Optimizer-ABS",
         "datas": "",
         "localizacao": "Porto, Portugal",
-        "descricao": "Arquitetura e desenvolvimento frontend de aplicações para hospitais e monitorização da navegação no rio Douro. Enfoque em performance, manutenção e qualidade do código."
+        "descricao": "Architecture and frontend development of applications for hospitals and monitoring navigation on the Douro River. Focus on performance, maintainability, and code quality."
     },
     {
         "cargo": "CEO & Frontend Engineer",
         "empresa": "Codegen Studio / Unisot",
         "datas": "",
         "localizacao": "Remote / Oslo, Norway",
-        "descricao": "Co-fundador e responsável pela arquitetura frontend de plataformas de supply-chain baseadas em blockchain. Desenvolvimento de aplicações para tracking, KPIs e troca de informação entre participantes.",
+        "descricao": "Co-founder and responsible for the frontend architecture of blockchain-based supply chain platforms. Development of applications for tracking, KPIs, and information exchange between participants.",
         "colaboradores": [
             "https://i.pravatar.cc/100?img=4",
             "https://i.pravatar.cc/100?img=5"
@@ -34,42 +34,41 @@
         "empresa": "Nogueira Ltd. + DEXPER",
         "datas": "",
         "localizacao": "Remote",
-        "descricao": "Liderança técnica e de produto no desenvolvimento de uma plataforma digital de eventos. Responsável por arquitetura frontend, design systems, pipelines CI/CD e metodologias ágeis."
+        "descricao": "Technical and product leadership in the development of a digital event platform. Responsible for frontend architecture, design systems, CI/CD pipelines, and agile methodologies."
     },
-
     {
-        "cargo": "A - Full-stack Developer",
+        "cargo": "Full-stack Developer",
         "empresa": "Sparkle It",
         "datas": "",
         "localizacao": "Viana do Castelo, Portugal",
-        "descricao": "Desenvolvimento de aplicações web e mobile, incluindo uma app de geolocalização com PostGIS e uma rede social com chat e newsfeed. Forte contacto com levantamento de requisitos e transformação das necessidades do cliente em soluções técnicas."
+        "descricao": "Development of web and mobile applications, including a geolocation app with PostGIS and a social network with chat and newsfeed. Strong involvement in requirements gathering and transforming client needs into technical solutions."
     },
     {
         "cargo": "Frontend Developer",
         "empresa": "Optimizer / SPMS",
         "datas": "",
         "localizacao": "Porto, Portugal",
-        "descricao": "Trabalho em sistemas nacionais de saúde, com foco na modernização de back-offices hospitalares e visualização de dados estatísticos. Experiência sólida em trabalho colaborativo e metodologia Scrum."
+        "descricao": "Worked on national healthcare systems, focusing on the modernization of hospital back-office systems and statistical data visualization. Solid experience in collaborative work and Scrum methodology."
     },
     {
         "cargo": "Software Engineer",
         "empresa": "Airbus",
         "datas": "",
         "localizacao": "Toulouse, France",
-        "descricao": "Desenvolvimento de aplicações web internas para gestão de dados da linha final de montagem de aeronaves. Colaboração diária num ambiente internacional e multidisciplinar."
+        "descricao": "Development of internal web applications for managing data from the aircraft final assembly line. Daily collaboration in an international and multidisciplinary environment."
     },
     {
         "cargo": "Frontend Engineer",
         "empresa": "Euronext",
         "datas": "",
         "localizacao": "Remote",
-        "descricao": "Implementação de um design system reutilizável e criação de componentes escaláveis. Reestruturação da arquitetura frontend de uma aplicação crítica para entrada de empresas no mercado bolsista."
+        "descricao": "Implementation of a reusable design system and creation of scalable components. Restructuring of the frontend architecture of a critical application for companies entering the stock exchange market."
     },
     {
         "cargo": "Full-stack Engineer",
         "empresa": "Giffits",
         "datas": "",
         "localizacao": "Remote / Hamburg, Germany",
-        "descricao": "Integração de serviços cloud e arquiteturas serverless. Desenvolvimento de soluções escaláveis para processos de personalização e automação em contexto de marketing digital."
+        "descricao": "Integration of cloud services and serverless architectures. Development of scalable solutions for personalization and automation processes in a digital marketing context."
     }
 ]
