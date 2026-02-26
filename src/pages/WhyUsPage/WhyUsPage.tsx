@@ -171,7 +171,7 @@ export default function WhyUsPage() {
                 />
 
                 <StyledCardTeaser
-                    title="Configurations"
+                    title="Configs"
                     checks={[
                         "Working under the same linting rules is crucial",
                         <div key={1}>
@@ -243,12 +243,22 @@ export default function WhyUsPage() {
                     title="Database"
                     checks={[
                         "Relational or non-relational, the decision comes from the need",
-                        <div key={1} style={{ display: "flex", gap: "10px" }}>
-                            <Icon svg={MongoDB} />
-                            <Icon svg={MySQL} />
-                            <Icon svg={PostgreSQL} />
-                            <Icon svg={GraphQL} />
-                            <Icon svg={FirebaseDB} />
+                        <div key={1}>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    gap: "10px",
+                                    marginBottom: "10px"
+                                }}
+                            >
+                                <Icon svg={MySQL} />
+                                <Icon svg={PostgreSQL} />
+                                <Icon svg={GraphQL} />
+                            </div>
+                            <div style={{ display: "flex", gap: "10px" }}>
+                                <Icon svg={MongoDB} />
+                                <Icon svg={FirebaseDB} />
+                            </div>
                         </div>
                     ]}
                     cardImageSrc={ServerBased}
