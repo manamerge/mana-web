@@ -1,7 +1,6 @@
 import React from "react";
 import {
     Header,
-    CardSimpleRender,
     CardBanner,
     Heading,
     Text,
@@ -10,6 +9,7 @@ import {
 } from "@manamerge/mana-atomic-ui";
 import {
     StyledCardTeaser,
+    StyledCardSimpleRender,
     WrapperHeader,
     SolidObjectComponent,
     NoisePatternComponent
@@ -306,11 +306,13 @@ export default function WhyUsPage() {
                 />
             </div>
 
-            <CardSimpleRender
+            <StyledCardSimpleRender
                 title="What makes us different?"
                 description="Our 15 years of experience combined in all environments of development grants us the ability to not only be professional at what we do, but also excel on other things that are important, such as:"
             >
-                <div style={{ alignSelf: "center", marginBottom: "20px" }}>
+                <div
+                    style={{ alignSelf: "center", margin: "0 20px 20px 20px" }}
+                >
                     <Text variant="primary-bold">
                         - Clean, maintainable code
                     </Text>
@@ -323,7 +325,7 @@ export default function WhyUsPage() {
                         - Focus on business impact, not just features
                     </Text>
                 </div>
-            </CardSimpleRender>
+            </StyledCardSimpleRender>
             <div style={{ margin: "20px 20px 10px 20px" }}>
                 <CardBanner
                     title="Let's connect and create something amazing!"
