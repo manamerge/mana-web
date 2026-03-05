@@ -531,7 +531,7 @@ export default function MMPage() {
                                     "Yes, we can help you improve/remodel your design. We have experience in redesigning and updating to newer trends existing UI/UX designs to make them more modern and user-friendly."
                             },
                             {
-                                title: "Can you upgrade my legacy system/application?",
+                                title: "Can you upgrade my legacy code?",
                                 description:
                                     "Yes, we can assist in upgrading legacy systems or applications. We have experience in modernizing and refactoring older codebases to improve performance, security, and maintainability."
                             }
