@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { CardTeaser } from "@manamerge/mana-atomic-ui";
 
 export const NoisePatternComponent = styled.svg`
     width: 100%;
@@ -53,4 +54,9 @@ export const WrapperHeader = styled.div`
         top: 0;
         background: transparent; */
     }
+`;
+
+export const StyledCardTeaser = styled(CardTeaser)`
+    width: stretch;
+    margin: 0 20px 0 20px;
 `;
