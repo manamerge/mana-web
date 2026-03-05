@@ -139,7 +139,7 @@ export default function MMPage() {
                     ></SolidObjectComponent>
 
                     <Header
-                        buttonRightClick={() => {}}
+                        buttonRightClick={() => navigate("/LetsTalk")}
                         buttonRightText="Contact us"
                         headingTitle="We are not your ordinary software team."
                         iconDot={iconDot}
