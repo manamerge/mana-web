@@ -1,10 +1,15 @@
 import styled from "styled-components";
-import { CardTeaser } from "@manamerge/mana-atomic-ui";
+import { CardTeaser, CardSimpleRender } from "@manamerge/mana-atomic-ui";
 
 export const StyledCardTeaser = styled(CardTeaser)`
     max-width: 400px;
     min-width: 400px;
     min-height: 290px;
+`;
+
+export const StyledCardSimpleRender = styled(CardSimpleRender)`
+    margin: 0 20px 0 20px;
+    width: stretch;
 `;
 
 export const NoisePatternComponent = styled.svg`
