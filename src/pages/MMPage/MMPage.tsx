@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import {
     WrapperHeader,
     NoisePatternComponent,
-    SolidObjectComponent
+    SolidObjectComponent,
+    StyledCardTeaser
 } from "./MMPage.css";
 
 // Images
@@ -66,7 +67,6 @@ import {
     BreakerTape,
     CardBanner,
     CardSimpleRender,
-    CardTeaser,
     Header,
     Accordion,
     Text,
@@ -169,7 +169,7 @@ export default function MMPage() {
                         The impact of our work throughout the years
                     </Text>
                 </div>
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     onClick={() => goToSite("https://dexper.io/")}
                     separator
@@ -186,7 +186,7 @@ export default function MMPage() {
                     ]}
                     cardImageSrc={dexper}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     company="giffits"
                     year="2024"
@@ -202,7 +202,7 @@ export default function MMPage() {
                     cardImageSrc={giffits}
                     separator={true}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     separator
                     moleculeVariant="primary"
@@ -219,7 +219,7 @@ export default function MMPage() {
                     ]}
                     cardImageSrc={unisot}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     company="Euronext"
                     year="2020"
@@ -233,7 +233,7 @@ export default function MMPage() {
                     cardImageSrc={euronext}
                     separator={true}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     company="Airbus"
                     year="2019"
@@ -247,7 +247,7 @@ export default function MMPage() {
                     cardImageSrc={airbus}
                     separator={true}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     separator
                     moleculeVariant="primary"
@@ -268,7 +268,7 @@ export default function MMPage() {
                     ]}
                     cardImageSrc={apdl}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     separator
                     moleculeVariant="primary"
@@ -289,7 +289,7 @@ export default function MMPage() {
                     ]}
                     cardImageSrc={ulsam}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     company="SPMS"
                     year="2017"
@@ -303,7 +303,7 @@ export default function MMPage() {
                     cardImageSrc={spms}
                     separator={true}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     moleculeVariant="primary"
                     company="SPARKLEIT"
