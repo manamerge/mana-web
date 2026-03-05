@@ -24,7 +24,8 @@ export default function LetsTalkPage() {
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    margin: "40px 0"
+                    textAlign: "center",
+                    margin: "40px 20px"
                 }}
             >
                 <Gradient variant="primary">
