@@ -121,7 +121,8 @@ const ProfessionalExperiences: React.FC = () => {
                                 <Text variant="primary-medium" vFontSize="md">
                                     {exp.descricao}
                                 </Text>
-                                {exp.colaboradores &&
+                                {/* 4 now, better comment this chunk because we'll have to go througout some history */}
+                                {/* {exp.colaboradores &&
                                     exp.colaboradores.length > 0 && (
                                         <>
                                             <CollaboratedWith>
@@ -139,7 +140,7 @@ const ProfessionalExperiences: React.FC = () => {
                                                 )}
                                             </ColaboradoresLine>
                                         </>
-                                    )}
+                                    )} */}
                             </LeftRightBox>
                         </Card>
 
