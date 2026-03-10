@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 import {
     WrapperHeader,
     NoisePatternComponent,
-    SolidObjectComponent
+    SolidObjectComponent,
+    StyledCardTeaser,
+    StyledAccordion
 } from "./MMPage.css";
 
 // Images
@@ -66,9 +68,7 @@ import {
     BreakerTape,
     CardBanner,
     CardSimpleRender,
-    CardTeaser,
     Header,
-    Accordion,
     Text,
     Heading,
     Pint3,
@@ -169,7 +169,7 @@ export default function MMPage() {
                         The impact of our work throughout the years
                     </Text>
                 </div>
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     onClick={() => goToSite("https://dexper.io/")}
                     separator
@@ -186,7 +186,7 @@ export default function MMPage() {
                     ]}
                     cardImageSrc={dexper}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     company="giffits"
                     year="2024"
@@ -202,7 +202,7 @@ export default function MMPage() {
                     cardImageSrc={giffits}
                     separator={true}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     separator
                     moleculeVariant="primary"
@@ -219,7 +219,7 @@ export default function MMPage() {
                     ]}
                     cardImageSrc={unisot}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     company="Euronext"
                     year="2020"
@@ -233,7 +233,7 @@ export default function MMPage() {
                     cardImageSrc={euronext}
                     separator={true}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     company="Airbus"
                     year="2019"
@@ -247,7 +247,7 @@ export default function MMPage() {
                     cardImageSrc={airbus}
                     separator={true}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     separator
                     moleculeVariant="primary"
@@ -268,7 +268,7 @@ export default function MMPage() {
                     ]}
                     cardImageSrc={apdl}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     separator
                     moleculeVariant="primary"
@@ -289,7 +289,7 @@ export default function MMPage() {
                     ]}
                     cardImageSrc={ulsam}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     company="SPMS"
                     year="2017"
@@ -303,7 +303,7 @@ export default function MMPage() {
                     cardImageSrc={spms}
                     separator={true}
                 />
-                <CardTeaser
+                <StyledCardTeaser
                     backgroundSvg={NoisePattern}
                     moleculeVariant="primary"
                     company="SPARKLEIT"
@@ -319,7 +319,7 @@ export default function MMPage() {
                     cardImageSrc={sparkleit}
                 />
 
-                <div style={{ margin: "80px 40px 40px 40px" }}>
+                <div style={{ margin: "80px 20px 40px 20px" }}>
                     <Pint3
                         cards={[
                             <div
@@ -504,43 +504,37 @@ export default function MMPage() {
                         />
                     </div>
                 </div>
+
+                <StyledAccordion
+                    iconMinus={minus}
+                    iconPlus={plus}
+                    content={[
+                        {
+                            title: "Are you available to hire full time?",
+                            description:
+                                "Currently we are open for either contract or full-time positions. We are always open to discussing interesting opportunities, collaborations and other fun stuff."
+                        },
+                        {
+                            title: "How do your quote pricing works?",
+                            description:
+                                "We usually work with fixed-price contracts based on the project scope and requirements. However, we are flexible and can adapt to different pricing models depending on the client's needs."
+                        },
+                        {
+                            title: "Can you facelift my design?",
+                            description:
+                                "Yes, we can help you improve/remodel your design. We have experience in redesigning and updating to newer trends existing UI/UX designs to make them more modern and user-friendly."
+                        },
+                        {
+                            title: "Can you upgrade my legacy system/application?",
+                            description:
+                                "Yes, we can assist in upgrading legacy systems or applications. We have experience in modernizing and refactoring older codebases to improve performance, security, and maintainability."
+                        }
+                    ]}
+                />
+
                 <div
                     style={{
-                        width: "60%",
-                        marginTop: "40px",
-                        marginBottom: "60px"
-                    }}
-                >
-                    <Accordion
-                        iconMinus={minus}
-                        iconPlus={plus}
-                        content={[
-                            {
-                                title: "Are you available to hire full time?",
-                                description:
-                                    "Currently we are open for either contract or full-time positions. We are always open to discussing interesting opportunities, collaborations and other fun stuff."
-                            },
-                            {
-                                title: "How do your quote pricing works?",
-                                description:
-                                    "We usually work with fixed-price contracts based on the project scope and requirements. However, we are flexible and can adapt to different pricing models depending on the client's needs."
-                            },
-                            {
-                                title: "Can you facelift my design?",
-                                description:
-                                    "Yes, we can help you improve/remodel your design. We have experience in redesigning and updating to newer trends existing UI/UX designs to make them more modern and user-friendly."
-                            },
-                            {
-                                title: "Can you upgrade my legacy code?",
-                                description:
-                                    "Yes, we can assist in upgrading legacy systems or applications. We have experience in modernizing and refactoring older codebases to improve performance, security, and maintainability."
-                            }
-                        ]}
-                    />
-                </div>
-                <div
-                    style={{
-                        margin: "0 40px 60px 40px"
+                        margin: "0 20px 60px 20px"
                     }}
                 >
                     <CardBanner
