@@ -84,7 +84,7 @@ import SVGGrid from "../../components/SVGGrid";
 export default function MMPage() {
     const navigate = useNavigate();
 
-    const goToSite = (link: string) => {
+    const openNewTabUrl = (link: string) => {
         window.open(link, "_blank", "noopener,noreferrer");
     };
 
@@ -171,7 +171,7 @@ export default function MMPage() {
                 </div>
                 <StyledCardTeaser
                     backgroundSvg={NoisePattern}
-                    onClick={() => goToSite("https://dexper.io/")}
+                    onClick={() => openNewTabUrl("https://dexper.io/")}
                     separator
                     moleculeVariant="primary"
                     company="DEXPER"
@@ -192,7 +192,7 @@ export default function MMPage() {
                     year="2024"
                     title="Marketing Automation"
                     buttonName="Take me there"
-                    onClick={() => goToSite("https://www.giffits.de/")}
+                    onClick={() => openNewTabUrl("https://www.giffits.de/")}
                     checks={[
                         "Building robust e-commerce solutions",
                         "Scalable serverless workflows",
@@ -209,7 +209,7 @@ export default function MMPage() {
                     company="UNISOT"
                     year="2021"
                     title="Frontend Engineer Blockchain Supply Chain"
-                    onClick={() => console.log("https://unisot.com")}
+                    onClick={() => openNewTabUrl("https://unisot.com")}
                     buttonName="Take me there"
                     svg={RoundArrow}
                     checks={[
@@ -255,7 +255,7 @@ export default function MMPage() {
                     year="2018"
                     title="Frontend River Monitoring"
                     onClick={() =>
-                        console.log(
+                        openNewTabUrl(
                             "https://play.google.com/store/apps/details?id=com.seamlink.gatewaybox.apdl2"
                         )
                     }
@@ -277,7 +277,7 @@ export default function MMPage() {
                     title="Frontend Developer Hospital App"
                     buttonName="Take me there"
                     onClick={() =>
-                        console.log(
+                        openNewTabUrl(
                             "https://play.google.com/store/apps/details?id=com.seamlink.gatewaybox.ulsam&pli=1"
                         )
                     }
@@ -430,7 +430,7 @@ export default function MMPage() {
                                 key={5}
                                 icon={Star}
                                 onClick={() =>
-                                    goToSite("http://localhost:6006/")
+                                    openNewTabUrl("http://localhost:6006/")
                                 }
                                 gradientPosition="center"
                                 title="UI/UX Design Systems"
