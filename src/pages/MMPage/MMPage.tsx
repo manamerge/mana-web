@@ -4,7 +4,8 @@ import {
     WrapperHeader,
     NoisePatternComponent,
     SolidObjectComponent,
-    StyledCardTeaser
+    StyledCardTeaser,
+    StyledAccordion
 } from "./MMPage.css";
 
 // Images
@@ -68,7 +69,6 @@ import {
     CardBanner,
     CardSimpleRender,
     Header,
-    Accordion,
     Text,
     Heading,
     Pint3,
@@ -504,39 +504,34 @@ export default function MMPage() {
                         />
                     </div>
                 </div>
-                <div
-                    style={{
-                        width: "stretch",
-                        margin: "40px 20px 60px 20px"
-                    }}
-                >
-                    <Accordion
-                        iconMinus={minus}
-                        iconPlus={plus}
-                        content={[
-                            {
-                                title: "Are you available to hire full time?",
-                                description:
-                                    "Currently we are open for either contract or full-time positions. We are always open to discussing interesting opportunities, collaborations and other fun stuff."
-                            },
-                            {
-                                title: "How do your quote pricing works?",
-                                description:
-                                    "We usually work with fixed-price contracts based on the project scope and requirements. However, we are flexible and can adapt to different pricing models depending on the client's needs."
-                            },
-                            {
-                                title: "Can you facelift my design?",
-                                description:
-                                    "Yes, we can help you improve/remodel your design. We have experience in redesigning and updating to newer trends existing UI/UX designs to make them more modern and user-friendly."
-                            },
-                            {
-                                title: "Can you upgrade my legacy system/application?",
-                                description:
-                                    "Yes, we can assist in upgrading legacy systems or applications. We have experience in modernizing and refactoring older codebases to improve performance, security, and maintainability."
-                            }
-                        ]}
-                    />
-                </div>
+
+                <StyledAccordion
+                    iconMinus={minus}
+                    iconPlus={plus}
+                    content={[
+                        {
+                            title: "Are you available to hire full time?",
+                            description:
+                                "Currently we are open for either contract or full-time positions. We are always open to discussing interesting opportunities, collaborations and other fun stuff."
+                        },
+                        {
+                            title: "How do your quote pricing works?",
+                            description:
+                                "We usually work with fixed-price contracts based on the project scope and requirements. However, we are flexible and can adapt to different pricing models depending on the client's needs."
+                        },
+                        {
+                            title: "Can you facelift my design?",
+                            description:
+                                "Yes, we can help you improve/remodel your design. We have experience in redesigning and updating to newer trends existing UI/UX designs to make them more modern and user-friendly."
+                        },
+                        {
+                            title: "Can you upgrade my legacy system/application?",
+                            description:
+                                "Yes, we can assist in upgrading legacy systems or applications. We have experience in modernizing and refactoring older codebases to improve performance, security, and maintainability."
+                        }
+                    ]}
+                />
+
                 <div
                     style={{
                         margin: "0 20px 60px 20px"

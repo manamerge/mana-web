@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CardTeaser } from "@manamerge/mana-atomic-ui";
+import { Accordion, CardTeaser } from "@manamerge/mana-atomic-ui";
 
 export const NoisePatternComponent = styled.svg`
     width: 100%;
@@ -59,4 +59,12 @@ export const WrapperHeader = styled.div`
 export const StyledCardTeaser = styled(CardTeaser)`
     width: stretch;
     margin: 0 20px;
+`;
+
+export const StyledAccordion = styled(Accordion)`
+    width: stretch;
+    margin: 40px 20px 60px 20px;
+    @media (min-width: 767px) {
+        width: 60%;
+    }
 `;
