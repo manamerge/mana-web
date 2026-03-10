@@ -44,7 +44,7 @@ export default function LetsTalkPage() {
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    margin: "40px 0 40px 0",
+                    margin: "40px 0 20px 0",
                     gap: "5px"
                 }}
             >
@@ -58,8 +58,8 @@ export default function LetsTalkPage() {
             <div
                 style={{
                     justifySelf: "center",
-                    marginBottom: "50px",
-                    width: "80%"
+                    margin: "0 20px 50px",
+                    width: "90%"
                 }}
             >
                 <SimpleMapPin
