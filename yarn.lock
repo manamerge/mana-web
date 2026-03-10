@@ -1658,10 +1658,10 @@
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.5.tgz"
   integrity sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==
 
-"@manamerge/mana-atomic-ui@1.0.229":
-  version "1.0.229"
-  resolved "https://registry.yarnpkg.com/@manamerge/mana-atomic-ui/-/mana-atomic-ui-1.0.229.tgz#b5bb8f0e28cc42482d7a38a4d847df8110a99c79"
-  integrity sha512-NHMhGSsgQQYyIWha3LfRMqv0EDG6XaDeZZ+faXzAFVx77XwLE05aJkyqAvd+fRlg7mZaa7wVe0oEin9/j96cRQ==
+"@manamerge/mana-atomic-ui@1.0.230":
+  version "1.0.230"
+  resolved "https://registry.npmjs.org/@manamerge/mana-atomic-ui/-/mana-atomic-ui-1.0.230.tgz#b55637506f22fb01f2daf16745c25ee97303be0e"
+  integrity sha512-yeZSELKjdUbCaeAwcXH58mGEq+pYoO+jr74tKx7CqvPFCwN2g7pzwWjlP9WI/lmRiSQNSvfVoj4FzWuwpx02cw==
   dependencies:
     "@storybook/addon-themes" "^8.4.5"
     "@vitejs/plugin-react" "^4.4.1"
