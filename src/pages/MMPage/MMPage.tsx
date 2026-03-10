@@ -319,7 +319,7 @@ export default function MMPage() {
                     cardImageSrc={sparkleit}
                 />
 
-                <div style={{ margin: "80px 40px 40px 40px" }}>
+                <div style={{ margin: "80px 20px 40px 20px" }}>
                     <Pint3
                         cards={[
                             <div
@@ -506,9 +506,8 @@ export default function MMPage() {
                 </div>
                 <div
                     style={{
-                        width: "60%",
-                        marginTop: "40px",
-                        marginBottom: "60px"
+                        width: "stretch",
+                        margin: "40px 20px 60px 20px"
                     }}
                 >
                     <Accordion
@@ -540,7 +539,7 @@ export default function MMPage() {
                 </div>
                 <div
                     style={{
-                        margin: "0 40px 60px 40px"
+                        margin: "0 20px 60px 20px"
                     }}
                 >
                     <CardBanner

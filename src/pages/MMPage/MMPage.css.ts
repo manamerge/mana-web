@@ -58,5 +58,5 @@ export const WrapperHeader = styled.div`
 
 export const StyledCardTeaser = styled(CardTeaser)`
     width: stretch;
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
 `;
