@@ -10,7 +10,7 @@ import HomePage from "./pages/MMPage/MMPage";
 import AboutPage from "./pages/TheTeamPage/TheTeamPage";
 import SolutionsPage from "./pages/WhyUsPage/WhyUsPage";
 import NotFoundPage from "./pages/NotFound/NotFoundPage";
-import TestPage from "./pages/LetsTalkPage/LetsTalkPage";
+import LetsTalkPage from "./pages/LetsTalkPage/LetsTalkPage";
 import MainLayout from "./layouts/Layout";
 
 const router = createBrowserRouter([
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
             { index: true, element: <HomePage /> },
             { path: "theteam", element: <AboutPage /> },
             { path: "whyus", element: <SolutionsPage /> },
-            { path: "letstalk", element: <TestPage /> },
+            { path: "letstalk", element: <LetsTalkPage /> },
             { path: "*", element: <NotFoundPage /> }
         ]
     }

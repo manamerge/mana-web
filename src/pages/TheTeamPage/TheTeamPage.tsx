@@ -60,6 +60,7 @@ export default function TheTeamPage() {
                         flexDirection: "column",
                         justifyContent: "center",
                         alignItems: "center",
+                        textAlign: "center",
                         margin: "40px 0"
                     }}
                 >
