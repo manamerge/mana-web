@@ -5,12 +5,12 @@ import { Footer, Navigation } from "@manamerge/mana-atomic-ui"; // adapta o path
 import { ReactComponent as iconBurger } from "../icons/burger.svg";
 import { ReactComponent as Sample } from "./assets/sample.svg";
 import { ReactComponent as MM } from "./assets/mm.svg";
-
+import { NavigationWrapper } from "./Layout.css";
 const MainLayout = () => {
     const navigate = useNavigate();
 
     return (
-        <>
+        <NavigationWrapper>
             <Navigation
                 onLogoClick={() => navigate("/")}
                 iconBurger={iconBurger}
@@ -70,7 +70,7 @@ const MainLayout = () => {
             >
                 Copyright © 2026 | ManaMerge | All rights reserved
             </Footer>
-        </>
+        </NavigationWrapper>
     );
 };
 
