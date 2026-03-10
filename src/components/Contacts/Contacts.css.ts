@@ -7,8 +7,8 @@ export const Container = styled.div`
     align-items: center;
     gap: 24px;
     border-radius: 16px;
-    max-width: 450px;
-    margin: 0px auto;
+    width: stretch;
+    margin: 0px 20px;
 `;
 
 export const StyledForm = styled.form`
@@ -16,6 +16,7 @@ export const StyledForm = styled.form`
     flex-direction: column;
     gap: 14px;
     width: 100%;
+    max-width: 450px;
 `;
 
 export const StyledInput = styled.input`
