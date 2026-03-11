@@ -57,9 +57,7 @@ export default function LetsTalkPage() {
             </div>
             <div
                 style={{
-                    justifySelf: "center",
-                    margin: "0 20px 50px",
-                    width: "90%"
+                    margin: "0 35px 50px"
                 }}
             >
                 <SimpleMapPin

@@ -73,7 +73,7 @@ export default function TheTeamPage() {
                         Where We've Been Employed
                     </Heading>
                 </div>
-                <div>
+                <div style={{ display: "flex", justifyContent: "center" }}>
                     <ProfessionalExperiences />
                 </div>
                 <div

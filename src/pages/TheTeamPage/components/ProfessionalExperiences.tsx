@@ -26,6 +26,9 @@ const Container = styled.div`
 
 const LeftRightBox = styled.div`
     width: 50%;
+    @media (max-width: 700px) {
+        width: 80%;
+    }
 `;
 
 const Card = styled.div`
@@ -36,6 +39,9 @@ const Card = styled.div`
     padding: 1rem;
     @media (max-width: 700px) {
         max-width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 `;
 
