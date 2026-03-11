@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Accordion, CardTeaser } from "@manamerge/mana-atomic-ui";
 
 export const NoisePatternComponent = styled.svg`
@@ -67,4 +67,55 @@ export const StyledAccordion = styled(Accordion)`
     @media (min-width: 767px) {
         width: 60%;
     }
+`;
+
+const float = keyframes`
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(40px, 30px); }
+  100% { transform: translate(0px, 0px); }
+`;
+
+export const AnimatedBG = styled.div`
+    position: relative;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    background: #01160e;
+
+    &::before {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        bottom: 13%;
+        right: -700px;
+        z-index: 0;
+        width: 900px;
+        height: 900px;
+        background: radial-gradient(circle, #ffffff23, transparent 70%);
+        animation: ${float} 20s ease-in-out infinite;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        z-index: -1;
+        left: -3500px;
+        top: 100px;
+        width: 3950px;
+        height: 3545px;
+        background: radial-gradient(circle, #ffffff73, transparent 75%);
+        animation: ${float} 50s ease-in-out infinite reverse;
+    }
+`;
+
+export const BottomCurve = styled.div`
+    position: absolute;
+    border-bottom: 2px solid #ffffff22;
+    bottom: -70px;
+    z-index: -1;
+    width: 2500px;
+    border-radius: 50%;
+    height: 2490px;
+    background: linear-gradient(180deg, transparent 10%, #a9e69411 100%);
 `;

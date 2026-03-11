@@ -5,7 +5,9 @@ import {
     NoisePatternComponent,
     SolidObjectComponent,
     StyledCardTeaser,
-    StyledAccordion
+    StyledAccordion,
+    AnimatedBG,
+    BottomCurve
 } from "./MMPage.css";
 
 // Images
@@ -120,7 +122,7 @@ export default function MMPage() {
     ];
 
     return (
-        <>
+        <AnimatedBG>
             <div
                 style={{
                     position: "relative",
@@ -318,7 +320,15 @@ export default function MMPage() {
                     ]}
                     cardImageSrc={sparkleit}
                 />
-
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        position: "relative"
+                    }}
+                >
+                    <BottomCurve />
+                </div>
                 <div style={{ margin: "80px 20px 40px 20px" }}>
                     <Pint3
                         cards={[
@@ -546,6 +556,6 @@ export default function MMPage() {
                     />
                 </div>
             </div>
-        </>
+        </AnimatedBG>
     );
 }
