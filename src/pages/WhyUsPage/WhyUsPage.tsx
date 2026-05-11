@@ -14,6 +14,7 @@ import {
     SolidObjectComponent,
     NoisePatternComponent
 } from "./WhyUsPage.css";
+import { useNavigate } from "react-router-dom";
 
 // assets
 import { ReactComponent as Sample } from "./assets/sample.svg";
@@ -69,6 +70,8 @@ import { ReactComponent as StyledComponents } from "../../icons/logos/StyledComp
 import { ReactComponent as Vitejs } from "../../icons/logos/Vitejs.svg";
 
 export default function WhyUsPage() {
+    const navigate = useNavigate();
+
     return (
         <div
             style={{
@@ -331,7 +334,7 @@ export default function WhyUsPage() {
                     title="Let's connect and create something amazing!"
                     description="Reach out to us for collaborations, inquiries, and more."
                     buttonText="Contact us"
-                    buttonClick={() => console.log("Button clicked!")}
+                    buttonClick={() => navigate("/LetsTalk")}
                     icon={Sample}
                 />
             </div>
