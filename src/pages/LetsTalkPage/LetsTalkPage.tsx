@@ -4,7 +4,7 @@ import SimpleMapPin from "./SimpleMap/SimpleMapPin";
 import ContactInfoCard from "./SimpleContactInfo/SimpleContactInfoCard";
 import { Heading, Header, Gradient } from "@manamerge/mana-atomic-ui";
 import { AnimatedBG } from "./LetsTalkPage.css";
-import office from "./assets/office.png";
+import office from "./assets/office.webp";
 export default function LetsTalkPage() {
     return (
         <AnimatedBG>
