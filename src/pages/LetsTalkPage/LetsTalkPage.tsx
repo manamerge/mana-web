@@ -14,7 +14,7 @@ export default function LetsTalkPage() {
                     "We’re ready when you are.",
                     "Tell us about your project, your idea, or your challenge."
                 ]}
-                headingTitle="Let’s Start a Conversation."
+                headingTitle={["Let’s Start a Conversation."]}
                 withOverlay
                 imageURLBackground={office}
             />
