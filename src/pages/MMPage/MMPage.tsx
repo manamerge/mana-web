@@ -13,16 +13,16 @@ import {
 // Images
 import ulsam from "./assets/ulsam-1.png";
 import apdl from "./assets/APDL-1.png";
-import unisot from "./assets/unisot.png";
-import dexper from "./assets/dexper.png";
-import giffits from "./assets/giffits.png";
+import unisot from "./assets/unisot.webp";
+import dexper from "./assets/dexper.jpg";
+import giffits from "./assets/giffits.webp";
 import euronext from "./assets/euronext.webp";
 import airbus from "./assets/airbus.png";
-import sparkleit from "./assets/sparkleit.png";
+import sparkleit from "./assets/sparkleit.webp";
 import devices from "./assets/devices.png";
 import spms from "./assets/spms.png";
-import alexisAvatar from "./assets/AlexisAvatar.png";
-import davidAvatar from "./assets/DavidAvatar.png";
+import alexisAvatar from "../../icons/avatars/AlexisAvatar.webp";
+import davidAvatar from "../../icons/avatars/DavidAvatar.webp";
 
 // Logos
 import { ReactComponent as AWS } from "../../icons/logos/AWS.svg";
@@ -390,14 +390,14 @@ export default function MMPage() {
                                         alt="David Avatar"
                                         height="110px"
                                         style={{
-                                            transform: "rotate(8deg)",
-                                            borderRadius: "34%"
+                                            transform: "rotate(0deg)",
+                                            borderRadius: "24%"
                                         }}
                                     />
                                     <img
                                         src={alexisAvatar}
                                         alt="Alexis Avatar"
-                                        height="110px"
+                                        height="115px"
                                         style={{
                                             borderRadius: "50%"
                                         }}

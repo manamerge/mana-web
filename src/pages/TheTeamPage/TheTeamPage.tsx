@@ -23,8 +23,8 @@ import {
     SolidObject
 } from "./TheTeamPage.css";
 // Assets
-import DavidAvatar from "./assets/DavidAvatar.png";
-import AlexisAvatar from "./assets/AlexisAvatar.png";
+import DavidAvatar from "../../icons/avatars/DavidAvatar.webp";
+import AlexisAvatar from "../../icons/avatars/AlexisAvatar.webp";
 import Book from "./assets/karama.png";
 import { ReactComponent as NoisePattern } from "./assets/noisePattern.svg";
 import { ReactComponent as Www } from "./assets/g911.svg";
@@ -157,7 +157,8 @@ export default function TheTeamPage() {
                                         zIndex: "-1"
                                     }}
                                 >
-                                    <Www
+                                    {/*? WIP This svg is making the loading of the page very slow... */}
+                                    {/* <Www
                                         style={{
                                             width: "280px",
                                             height: "285px",
@@ -166,7 +167,7 @@ export default function TheTeamPage() {
                                             position: "absolute",
                                             filter: "opacity(0.5)"
                                         }}
-                                    />
+                                    /> */}
                                 </div>
                             </CardSimpleRender>,
                             <CardSimpleRenderWrapper
@@ -206,7 +207,7 @@ export default function TheTeamPage() {
                                             alt={`Colaborador 1`}
                                             key="1"
                                             height="50px"
-                                            width="37px"
+                                            width="34px"
                                         />
                                         <Avatar
                                             src={AlexisAvatar}
