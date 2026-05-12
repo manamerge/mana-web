@@ -94,7 +94,7 @@ export default function WhyUsPage() {
                 ></SolidObjectComponent>
                 <Header
                     moleculeVariant="secondary"
-                    headingTitle="What Defines Our Team?"
+                    headingTitle={["What Defines Our Team?"]}
                     textTitle={[
                         "The skills that took us to the next level.",
                         "From clean code to scalable architecture."

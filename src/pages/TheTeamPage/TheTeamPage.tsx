@@ -51,7 +51,7 @@ export default function TheTeamPage() {
                             "Two engineers. One shared vision.",
                             "We design, build and scale digital products with purpose."
                         ]}
-                        headingTitle="Meet The Team."
+                        headingTitle={["Meet The Team."]}
                     />
                 </WrapperHeader>
                 <div
