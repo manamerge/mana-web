@@ -11,16 +11,16 @@ import {
 } from "./MMPage.css";
 
 // Images
-import ulsam from "./assets/ulsam-1.png";
-import apdl from "./assets/APDL-1.png";
+import ulsam from "./assets/ulsam-1.webp";
+import apdl from "./assets/APDL-1.webp";
 import unisot from "./assets/unisot.webp";
-import dexper from "./assets/dexper.jpg";
+import dexper from "./assets/dexper.webp";
 import giffits from "./assets/giffits.webp";
 import euronext from "./assets/euronext.webp";
-import airbus from "./assets/airbus.png";
+import airbus from "./assets/airbus.webp";
 import sparkleit from "./assets/sparkleit.webp";
 import devices from "./assets/devices.png";
-import spms from "./assets/spms.png";
+import spms from "./assets/spms.webp";
 import alexisAvatar from "../../icons/avatars/AlexisAvatar.webp";
 import davidAvatar from "../../icons/avatars/DavidAvatar.webp";
 
