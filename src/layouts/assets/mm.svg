@@ -1,23 +1,38 @@
-<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#8CC63F;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#00AEEF;stop-opacity:1" />
-        </linearGradient>
-
-        <linearGradient id="innerShadow" x1="100%" y1="0%" x2="80%" y2="20%">
-            <stop offset="0%" style="stop-color:#000;stop-opacity:0.2" />
-            <stop offset="100%" style="stop-color:#000;stop-opacity:0" />
+        <linearGradient id="leftGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#80C3BA;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#C6FBA6;stop-opacity:1" />
         </linearGradient>
     </defs>
 
-    <!-- <rect width="500" height="500" fill="#1A1A1A" /> -->
+    <g>
+        <circle cx="88" cy="65" r="38" fill="#80C3BA" />
+        <path
+            d="M50 130
+             V425
+             L123 470
+             V240
+             L236 357
+             V262
+             L123 130
+             V130
+             Z"
+            fill="url(#leftGradient)" />
+    </g>
 
-    <path d="M250 50 L423.2 150 V350 L250 450 L76.8 350 V150 Z" fill="url(#hexGradient)" />
-
-    <path d="M250 50 L423.2 150 V350 L250 450 L250 250 Z" fill="url(#innerShadow)" />
-
-    <path
-        d="M250 110 L370 180 V310 L330 335 V215 L275 185 V360 L225 360 V185 L170 215 V335 L130 310 V180 Z"
-        fill="white" />
+    <g>
+        <circle cx="412" cy="65" r="38" fill="#fff" />
+        <path
+            d="M450 130
+             V425
+             L377 470
+             V240
+             L264 357
+             V262
+             L377 130
+             V130
+             Z"
+            fill="#fff" />
+    </g>
 </svg>

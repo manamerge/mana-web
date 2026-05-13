@@ -19,7 +19,7 @@ import giffits from "./assets/giffits.webp";
 import euronext from "./assets/euronext.webp";
 import airbus from "./assets/airbus.webp";
 import sparkleit from "./assets/sparkleit.webp";
-import devices from "./assets/devices.png";
+import devices from "./assets/devices.webp";
 import spms from "./assets/spms.webp";
 import alexisAvatar from "../../icons/avatars/AlexisAvatar.webp";
 import davidAvatar from "../../icons/avatars/DavidAvatar.webp";
