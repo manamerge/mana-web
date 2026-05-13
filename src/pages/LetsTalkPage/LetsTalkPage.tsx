@@ -11,8 +11,10 @@ export default function LetsTalkPage() {
             <Header
                 moleculeVariant="secondary"
                 textTitle={[
-                    "We’re ready when you are.",
-                    "Tell us about your project, your idea, or your challenge."
+                    "We’re ready when you are. ",
+                    <br key={1} />,
+                    "Tell us about your project, ",
+                    "your idea, or your challenge."
                 ]}
                 headingTitle={["Let’s Start a Conversation."]}
                 withOverlay

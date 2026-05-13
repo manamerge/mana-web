@@ -96,7 +96,7 @@ export default function WhyUsPage() {
                     moleculeVariant="secondary"
                     headingTitle={["What Defines Our Team?"]}
                     textTitle={[
-                        "The skills that took us to the next level.",
+                        "The skills that took us to the next level. ",
                         "From clean code to scalable architecture."
                     ]}
                 />
@@ -136,8 +136,8 @@ export default function WhyUsPage() {
                     title="Frontend"
                     checks={[
                         "Our biggest strength!",
-                        "JS, HTML, CSS, and more.",
-                        "Typescript friendly.",
+                        "JS, HTML, CSS, and more",
+                        "Typescript friendly",
                         <div key={1}>
                             <div
                                 style={{

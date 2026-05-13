@@ -308,6 +308,10 @@ export default function MMPage() {
                         "Interoperability of reports and HL7 data",
                         "Monitoring and alarm of statistics"
                     ]}
+                    buttonName="Take me there"
+                    onClick={() =>
+                        openNewTabUrl("https://www.sns24.gov.pt/pt/inicio")
+                    }
                     svg={RoundArrow}
                     cardImageSrc={spms}
                     separator={true}
@@ -449,7 +453,7 @@ export default function MMPage() {
                                 key={5}
                                 icon={Star}
                                 onClick={() =>
-                                    openNewTabUrl("http://localhost:6006/")
+                                    openNewTabUrl("https://storybook.js.org/")
                                 }
                                 gradientPosition="center"
                                 title="UI/UX Design Systems"
