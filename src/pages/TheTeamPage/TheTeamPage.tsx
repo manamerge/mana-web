@@ -48,7 +48,7 @@ export default function TheTeamPage() {
                     <Header
                         moleculeVariant="secondary"
                         textTitle={[
-                            "Two engineers. One shared vision.",
+                            "Two engineers. One shared vision. ",
                             "We design, build and scale digital products with purpose."
                         ]}
                         headingTitle={["Meet The Team."]}
