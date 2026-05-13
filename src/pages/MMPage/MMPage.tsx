@@ -143,10 +143,17 @@ export default function MMPage() {
                     <Header
                         buttonRightClick={() => navigate("/LetsTalk")}
                         buttonRightText="Contact us"
-                        headingTitle="We are not your ordinary software team."
+                        headingTitle={["Not an ordinary software team."]}
                         iconDot={iconDot}
-                        buttonRightIcon={iconRight}
-                        textTitle={["We're ManaMerge!"]}
+                        buttonRightIcon={Sample}
+                        textTitle={[
+                            <>
+                                <Gradient variant="primary">
+                                    <span>MANA</span>
+                                </Gradient>
+                                <span style={{ color: "#fff" }}>MERGE</span>
+                            </>
+                        ]}
                     />
                 </WrapperHeader>
 
@@ -329,12 +336,13 @@ export default function MMPage() {
                 >
                     <BottomCurve />
                 </div>
-                <div style={{ margin: "80px 20px 40px 20px" }}>
+                <div style={{ margin: "80px 20px 40px" }}>
                     <Pint3
                         cards={[
                             <div
                                 style={{
-                                    width: "100%"
+                                    width: "100%",
+                                    display: "contents"
                                 }}
                                 key={1}
                             >
