@@ -377,7 +377,7 @@ export default function MMPage() {
                             <CardSimpleRender
                                 key={3}
                                 icon={Star}
-                                onClick={() => navigate("/theteam")}
+                                onClick={() => navigate("/TheTeam")}
                                 gradientPosition="top"
                                 title="Who are we?"
                                 description="An engineering team with international experience, working with companies ranging from innovative startups to global enterprises with a track record of delivering high-quality software solutions.
@@ -422,7 +422,7 @@ export default function MMPage() {
                             <CardSimpleRender
                                 key={7}
                                 icon={Star}
-                                onClick={() => navigate("/whyus")}
+                                onClick={() => navigate("/WhyUs")}
                                 gradientPosition="top left"
                                 title="What do we do?"
                                 description="We build software that solves real-world problems for businesses and end users."
