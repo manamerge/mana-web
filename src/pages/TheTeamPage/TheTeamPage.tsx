@@ -118,7 +118,7 @@ export default function TheTeamPage() {
                                     </Heading>
                                 </Gradient>
                                 <Heading variant="primary" asTag="h1">
-                                    Here, know more about us
+                                    A little more about us
                                 </Heading>
                             </div>,
                             <div
