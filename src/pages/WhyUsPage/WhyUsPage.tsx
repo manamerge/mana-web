@@ -124,7 +124,6 @@ export default function WhyUsPage() {
 
             <div
                 style={{
-                    width: "90%",
                     display: "flex",
                     flexDirection: "row",
                     flexWrap: "wrap",

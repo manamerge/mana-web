@@ -388,6 +388,7 @@ export default function MMPage() {
                                         display: "flex",
                                         width: "100%",
                                         height: "100%",
+                                        gap: "30px",
                                         justifyContent: "center",
                                         alignItems: "center",
                                         margin: "0 10px 20px 10px"

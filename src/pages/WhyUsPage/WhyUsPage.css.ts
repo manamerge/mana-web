@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { CardTeaser, CardSimpleRender } from "@manamerge/mana-atomic-ui";
 
 export const StyledCardTeaser = styled(CardTeaser)`
-    max-width: 400px;
-    min-width: 330px;
+    max-width: 420px;
+    min-width: 300px;
     min-height: 290px;
+    width: stretch;
 `;
 
 export const StyledCardSimpleRender = styled(CardSimpleRender)`
