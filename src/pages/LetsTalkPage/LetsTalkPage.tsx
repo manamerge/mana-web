@@ -63,8 +63,8 @@ export default function LetsTalkPage() {
                 }}
             >
                 <SimpleMapPin
-                    lat={45.811}
-                    lng={15.98}
+                    lat={45.808}
+                    lng={16.003}
                     zoom={12}
                     width="auto"
                     height="300px"

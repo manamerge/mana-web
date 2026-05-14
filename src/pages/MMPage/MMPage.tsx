@@ -217,7 +217,7 @@ export default function MMPage() {
                     moleculeVariant="primary"
                     company="UNISOT"
                     year="2021"
-                    title="Frontend Engineer Blockchain Supply Chain"
+                    title="Blockchain Supply Chain"
                     onClick={() => openNewTabUrl("https://unisot.com")}
                     buttonName="Take me there"
                     svg={RoundArrow}
@@ -262,7 +262,7 @@ export default function MMPage() {
                     moleculeVariant="primary"
                     company="APDL"
                     year="2018"
-                    title="Frontend River Monitoring"
+                    title="River Monitoring Platform"
                     onClick={() =>
                         openNewTabUrl(
                             "https://play.google.com/store/apps/details?id=com.seamlink.gatewaybox.apdl2"
@@ -283,7 +283,7 @@ export default function MMPage() {
                     moleculeVariant="primary"
                     company="ULSAM"
                     year="2018"
-                    title="Frontend Developer Hospital App"
+                    title="Hospital Application"
                     buttonName="Take me there"
                     onClick={() =>
                         openNewTabUrl(
@@ -321,7 +321,7 @@ export default function MMPage() {
                     moleculeVariant="primary"
                     company="SPARKLEIT"
                     year="2016"
-                    title="Full-Stack Geolocation"
+                    title="Geolocation Cartography Tool"
                     separator
                     svg={RoundArrow}
                     checks={[
