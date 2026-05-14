@@ -63,15 +63,15 @@ export default function LetsTalkPage() {
                 }}
             >
                 <SimpleMapPin
-                    lat={45.811}
-                    lng={15.98}
+                    lat={45.808}
+                    lng={16.003}
                     zoom={12}
                     width="auto"
                     height="300px"
                 />
             </div>
             <ContactInfoCard
-                address="Škorpikova 34, 10000, Zagreb, Croatia"
+                address="Ul. Vjekoslava Heinzela 60, 10000, Zagreb, Croatia"
                 email="manamerge@hotmail.com"
             />
         </AnimatedBG>
