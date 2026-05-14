@@ -143,7 +143,7 @@ export default function MMPage() {
                     <Header
                         buttonRightClick={() => navigate("/LetsTalk")}
                         buttonRightText="Contact us"
-                        headingTitle={["Not an ordinary software team."]}
+                        headingTitle={["Not an ordinary software team"]}
                         iconDot={iconDot}
                         buttonRightIcon={Sample}
                         textTitle={[
@@ -185,7 +185,7 @@ export default function MMPage() {
                     moleculeVariant="primary"
                     company="DEXPER"
                     year="2024"
-                    title="Frontend Engineer Event Platform"
+                    title="Event Platform for Conferences"
                     buttonName="Take me there"
                     svg={RoundArrow}
                     checks={[

@@ -19,7 +19,14 @@
         "descricao": "Architecture and frontend development of applications for hospitals and monitoring navigation on the Douro River. Focus on performance, maintainability, and code quality."
     },
     {
-        "cargo": "CEO & Frontend Engineer",
+        "cargo": "Backend Engineer",
+        "empresa": "SPMS",
+        "datas": "",
+        "localizacao": "Porto, Portugal",
+        "descricao": "Worked on national healthcare systems, focusing on the modernization of hospital back-office systems and statistical data visualization. Solid experience in collaborative work and Scrum methodology."
+    },
+    {
+        "cargo": "Frontend Engineer",
         "empresa": "Codegen Studio / Unisot",
         "datas": "",
         "localizacao": "Remote / Oslo, Norway",
@@ -30,28 +37,14 @@
         ]
     },
     {
-        "cargo": "CEO & Frontend Engineer",
+        "cargo": "Frontend Engineer",
         "empresa": "Nogueira Ltd. + DEXPER",
         "datas": "",
         "localizacao": "Remote",
         "descricao": "Technical and product leadership in the development of a digital event platform. Responsible for frontend architecture, design systems, CI/CD pipelines, and agile methodologies."
     },
     {
-        "cargo": "Full-stack Developer",
-        "empresa": "Sparkle It",
-        "datas": "",
-        "localizacao": "Viana do Castelo, Portugal",
-        "descricao": "Development of web and mobile applications, including a geolocation app with PostGIS and a social network with chat and newsfeed. Strong involvement in requirements gathering and transforming client needs into technical solutions."
-    },
-    {
-        "cargo": "Frontend Developer",
-        "empresa": "Optimizer / SPMS",
-        "datas": "",
-        "localizacao": "Porto, Portugal",
-        "descricao": "Worked on national healthcare systems, focusing on the modernization of hospital back-office systems and statistical data visualization. Solid experience in collaborative work and Scrum methodology."
-    },
-    {
-        "cargo": "Software Engineer",
+        "cargo": "Consultant Engineer",
         "empresa": "Airbus",
         "datas": "",
         "localizacao": "Toulouse, France",

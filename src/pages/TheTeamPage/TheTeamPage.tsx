@@ -199,7 +199,7 @@ export default function TheTeamPage() {
                                                 The team that
                                             </Text>
                                             <Text variant="primary-bold">
-                                                got your back 🤩 🚀
+                                                has your back 🤩 🚀
                                             </Text>
                                         </div>
                                         <Avatar

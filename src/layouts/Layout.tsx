@@ -29,7 +29,7 @@ const MainLayout = () => {
                         to: "/WhyUs"
                     },
                     {
-                        label: "Lets Talk",
+                        label: "Let's Talk",
                         to: "/LetsTalk"
                     }
                 ]}
@@ -64,7 +64,7 @@ const MainLayout = () => {
                         order: 4,
                         type: "internal",
                         slug: "/LetsTalk",
-                        label: "Lets Talk"
+                        label: "Let's Talk"
                     }
                 ]}
             >

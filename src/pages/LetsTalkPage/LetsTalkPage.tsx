@@ -71,7 +71,7 @@ export default function LetsTalkPage() {
                 />
             </div>
             <ContactInfoCard
-                address="Škorpikova 34, 10000, Zagreb, Croatia"
+                address="Ul. Vjekoslava Heinzela 60, 10000, Zagreb, Croatia"
                 email="manamerge@hotmail.com"
             />
         </AnimatedBG>
